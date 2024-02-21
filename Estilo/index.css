@@ -2,58 +2,71 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
-header{
-    width:100%;
+
+header {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
-main{
+
+main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
 }
-nav{
+
+nav {
     display: flex;
 }
+
 .infos {
-    width:100%;
+    width: 100%;
     text-align: left;
     background-color: #f0f0f0;
     padding: 10px;
-
+    position: relative;
+    z-index: 2; /* Z-index maior do que o das imagens */
 }
+
 .infos h4 {
     color: #000;
     font-weight: bold;
     filter: grayscale(100%);
     margin: 0;
-    padding:8px;
+    padding: 8px;
 }
-.infos a{
+
+.infos a {
     text-decoration: none;
 }
-.centro{
+
+.centro {
     margin-left: auto;
     margin-right: auto;
 }
+
 .logo {
     height: 50px;
     margin: 20px 0px;
     display: inline-block;
     float: left;
 }
+
 ul {
     margin: 0;
     padding: 0;
     margin: 20px 0px;
     background-color: #ccc;
+    position: relative;
+    z-index: 2; /* Z-index maior do que o das imagens */
 }
+
 ul li {
     list-style: none;
     display: inline-block;
@@ -62,7 +75,7 @@ ul li {
     cursor: pointer;
 }
 
-ul li:hover ul li{
+ul li:hover ul li {
     display: block;
 }
 
@@ -72,6 +85,7 @@ ul li ul {
     padding: 0;
     border: 1px solid #333;
     margin-top: 8px;
+    z-index: 3; /* Z-index maior do que o das imagens e do pai ul */
 }
 
 li ul li {
@@ -92,6 +106,7 @@ ul li a {
 .imagens-section {
     text-align: center;
     position: relative;
+    z-index: 1; /* Z-index menor do que o das sublistas */
 }
 
 .imagens-section img {
@@ -101,16 +116,17 @@ ul li a {
 }
 
 .imagens-section .imagem-atual {
-    display: block; /* Mostra apenas a imagem atual */
+    display: block;
 }
 
-.seta-esquerda, .seta-direita {
+.seta-esquerda,
+.seta-direita {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
     cursor: pointer;
-    opacity: 0; /* Inicialmente, a seta é invisível */
+    opacity: 0;
 }
 
 .seta-esquerda {
@@ -122,13 +138,15 @@ ul li a {
 }
 
 .info-box {
-    background-color: #000;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto claro com transparência */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    right: 40%;
     transform: translate(-50%, -50%);
     padding: 10px;
+    border-radius: 10px; /* Borda arredondada para simular um balão */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -136,3 +154,31 @@ ul li a {
 .imagem-container:hover .info-box {
     opacity: 1;
 }
+
+
+.info-box strong {
+    color: rgb(210, 5, 210); /* Letras roxas dentro de <strong> */
+}
+
+.seta {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto claro com transparência */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px 15px; /* Espaçamento interno para o botão */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto claro com transparência */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
+

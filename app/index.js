@@ -3,17 +3,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const imagens = document.querySelectorAll('.imagens-section img');
     const setaEsquerda = document.querySelector('.seta-esquerda');
     const setaDireita = document.querySelector('.seta-direita');
+    const infoBox = document.querySelectorAll('.info-box');
 
     let imagemAtualIndex = 0;
 
-    imagensSection.addEventListener('mouseover', () => {
+    imagensSection.addEventListener('mouseenter', () => {
         setaEsquerda.style.opacity = '1';
         setaDireita.style.opacity = '1';
+        infoBox[imagemAtualIndex].style.opacity = '1';
     });
 
-    imagensSection.addEventListener('mouseout', () => {
+    imagensSection.addEventListener('mouseleave', () => {
         setaEsquerda.style.opacity = '0';
         setaDireita.style.opacity = '0';
+        infoBox[imagemAtualIndex].style.opacity = '0';
     });
 
     setaEsquerda.addEventListener('click', () => {
@@ -44,8 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
         imagens.forEach((imagem, index) => {
             if (index === imagemAtualIndex) {
                 imagem.style.display = 'block';
+                infoBox[index].style.opacity = '1';
             } else {
                 imagem.style.display = 'none';
+                infoBox[index].style.opacity = '0';
             }
         });
     }
