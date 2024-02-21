@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const temporizadorTrocaAutomatica = setInterval(() => {
         mostrarProximaImagem();
-    }, 10000);
+    }, 20000);
 
     function mostrarImagemAnterior() {
         ocultarImagemAtual();

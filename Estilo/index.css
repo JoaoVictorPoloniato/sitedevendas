@@ -18,6 +18,9 @@ main{
     margin-right: auto;
     display: flex;
 }
+nav{
+    display: flex;
+}
 .infos {
     width:100%;
     text-align: left;
@@ -38,23 +41,19 @@ main{
 .centro{
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
-    width:100%;
 }
-
 .logo {
-    height: 100px;
+    height: 50px;
+    margin: 20px 0px;
     display: inline-block;
     float: left;
 }
-
 ul {
     margin: 0;
     padding: 0;
-    
+    margin: 20px 0px;
+    background-color: #ccc;
 }
-
-
 ul li {
     list-style: none;
     display: inline-block;
@@ -120,4 +119,20 @@ ul li a {
 
 .seta-direita {
     right: 10px;
+}
+
+.info-box {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagem-container:hover .info-box {
+    opacity: 1;
 }
