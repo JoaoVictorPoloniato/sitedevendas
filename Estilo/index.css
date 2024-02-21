@@ -2,21 +2,45 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
 }
-
-.cabecalho {
+header{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.infos {
+    width:100%;
     text-align: left;
     background-color: #f0f0f0;
     padding: 10px;
-}
 
-.cabecalho h4 {
+}
+.infos h4 {
     color: #000;
     font-weight: bold;
     filter: grayscale(100%);
     margin: 0;
+    padding:8px;
 }
-
+.infos a{
+    text-decoration: none;
+}
+.centro{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width:100%;
+}
 
 .logo {
     height: 100px;
@@ -68,15 +92,13 @@ ul li a {
 
 .imagens-section {
     text-align: center;
-    margin-top: 50vh; 
     position: relative;
 }
 
 .imagens-section img {
     width: 100%;
-    max-width: 600px; /* Ajuste o valor conforme necessário */
-    height: auto;
-    display: none; /* Inicialmente, oculta todas as imagens */
+    display: none;
+    height: 400px;
 }
 
 .imagens-section .imagem-atual {

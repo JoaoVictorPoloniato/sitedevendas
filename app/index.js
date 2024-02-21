@@ -1,53 +1,56 @@
 document.addEventListener('DOMContentLoaded', function () {
     const imagensSection = document.getElementById('imagens-section');
-    const botaoTrocarImagem = document.getElementById('trocar-imagem');
+    const imagens = document.querySelectorAll('.imagens-section img');
+    const setaEsquerda = document.querySelector('.seta-esquerda');
+    const setaDireita = document.querySelector('.seta-direita');
 
-    botaoTrocarImagem.addEventListener('click', trocarImagem);
+    let imagemAtualIndex = 0;
 
-    function trocarImagem() {
-        const imagens = imagensSection.querySelectorAll('img');
+    imagensSection.addEventListener('mouseover', () => {
+        setaEsquerda.style.opacity = '1';
+        setaDireita.style.opacity = '1';
+    });
 
-        imagens.forEach(imagem => {
-            if (imagem.classList.contains('imagem-atual')) {
-                imagem.classList.remove('imagem-atual');
-                imagem.classList.add('imagem-oculta');
+    imagensSection.addEventListener('mouseout', () => {
+        setaEsquerda.style.opacity = '0';
+        setaDireita.style.opacity = '0';
+    });
+
+    setaEsquerda.addEventListener('click', () => {
+        mostrarImagemAnterior();
+    });
+
+    setaDireita.addEventListener('click', () => {
+        mostrarProximaImagem();
+    });
+
+    const temporizadorTrocaAutomatica = setInterval(() => {
+        mostrarProximaImagem();
+    }, 10000);
+
+    function mostrarImagemAnterior() {
+        ocultarImagemAtual();
+        imagemAtualIndex = (imagemAtualIndex - 1 + imagens.length) % imagens.length;
+        mostrarImagemAtual();
+    }
+
+    function mostrarProximaImagem() {
+        ocultarImagemAtual();
+        imagemAtualIndex = (imagemAtualIndex + 1) % imagens.length;
+        mostrarImagemAtual();
+    }
+
+    function mostrarImagemAtual() {
+        imagens.forEach((imagem, index) => {
+            if (index === imagemAtualIndex) {
+                imagem.style.display = 'block';
             } else {
-                imagem.classList.remove('imagem-oculta');
-                imagem.classList.add('imagem-atual');
+                imagem.style.display = 'none';
             }
         });
     }
-});
 
-// Adicionando lógica para navegar entre as imagens ao passar o mouse sobre as imagens
-const imagensSection = document.querySelector('.imagens-section');
-const imagens = document.querySelectorAll('.imagens-section img');
-const setaEsquerda = document.querySelector('.seta-esquerda');
-const setaDireita = document.querySelector('.seta-direita');
-
-let imagemAtualIndex = 0;
-
-// Exibe a seta quando o mouse está sobre as imagens
-imagensSection.addEventListener('mouseover', () => {
-    setaEsquerda.style.opacity = '1';
-    setaDireita.style.opacity = '1';
-});
-
-// Oculta a seta quando o mouse sai das imagens
-imagensSection.addEventListener('mouseout', () => {
-    setaEsquerda.style.opacity = '0';
-    setaDireita.style.opacity = '0';
-});
-
-// Adiciona lógica para trocar a imagem ao clicar nas setas
-setaEsquerda.addEventListener('click', () => {
-    imagens[imagemAtualIndex].style.display = 'none';
-    imagemAtualIndex = (imagemAtualIndex - 1 + imagens.length) % imagens.length;
-    imagens[imagemAtualIndex].style.display = 'block';
-});
-
-setaDireita.addEventListener('click', () => {
-    imagens[imagemAtualIndex].style.display = 'none';
-    imagemAtualIndex = (imagemAtualIndex + 1) % imagens.length;
-    imagens[imagemAtualIndex].style.display = 'block';
+    function ocultarImagemAtual() {
+        imagens[imagemAtualIndex].style.display = 'none';
+    }
 });
