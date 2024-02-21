@@ -27,7 +27,9 @@ body {
 ul {
     margin: 0;
     padding: 0;
+    
 }
+
 
 ul li {
     list-style: none;
@@ -62,4 +64,38 @@ ul li a {
     display: block;
     text-decoration: none;
     color: #333;
+}
+
+.imagens-section {
+    text-align: center;
+    margin-top: 50vh; 
+    position: relative;
+}
+
+.imagens-section img {
+    width: 100%;
+    max-width: 600px; /* Ajuste o valor conforme necessário */
+    height: auto;
+    display: none; /* Inicialmente, oculta todas as imagens */
+}
+
+.imagens-section .imagem-atual {
+    display: block; /* Mostra apenas a imagem atual */
+}
+
+.seta-esquerda, .seta-direita {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente, a seta é invisível */
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+.seta-direita {
+    right: 10px;
 }
