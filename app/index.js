@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const setaEsquerda = document.querySelector('.seta-esquerda');
     const setaDireita = document.querySelector('.seta-direita');
     const infoBox = document.querySelectorAll('.info-box');
+    const indicadoresLista = document.getElementById('indicadores-lista');
 
     let imagemAtualIndex = 0;
 
@@ -31,6 +32,25 @@ document.addEventListener('DOMContentLoaded', function () {
         mostrarProximaImagem();
     }, 20000);
 
+    // Adiciona indicadores
+    imagens.forEach((_, index) => {
+        const indicador = document.createElement('li');
+        indicador.classList.add('indicador');
+        indicadoresLista.appendChild(indicador);
+    });
+
+    const indicadores = document.querySelectorAll('.indicadores .indicador');
+
+    function atualizarIndicadores() {
+        indicadores.forEach((indicador, index) => {
+            if (index === imagemAtualIndex) {
+                indicador.classList.add('ativo');
+            } else {
+                indicador.classList.remove('ativo');
+            }
+        });
+    }
+
     function mostrarImagemAnterior() {
         ocultarImagemAtual();
         imagemAtualIndex = (imagemAtualIndex - 1 + imagens.length) % imagens.length;
@@ -53,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 infoBox[index].style.opacity = '0';
             }
         });
+
+        atualizarIndicadores();
     }
 
     function ocultarImagemAtual() {

@@ -181,4 +181,31 @@ ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: whitesmoke;
 }
+.indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Ajuste para alinhar na parte inferior */
+    height: 100%; /* Faz com que a altura da seção de indicadores seja igual à altura da seção de imagens */
+    margin-top: -34px; /* Ajuste para posicionar sobre a imagem */
+}
 
+.indicadores ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+}
+
+.indicadores .indicador {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1); /* Quase invisível */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.indicadores .indicador.ativo {
+    background-color: whitesmoke;
+}
