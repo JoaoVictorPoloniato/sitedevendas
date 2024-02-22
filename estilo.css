@@ -106,39 +106,54 @@ main{
     text-align: center;
     position: relative;
     z-index: 40;
-    height: 400px;
+    height: 500px;
 }
-.imagens-section img {
+.background-image{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.1);
+	background-blend-mode: overlay;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imagem-oculta{
     display: none;
-    height: 400px;
-    background-position: center
 }
-
-.imagens-section .imagem-atual {
+.imagens-section {
     display: block;
- 
 }
-
-.seta-esquerda,
-.seta-direita {
+.imagem-atual{
+    display: block;
+}
+.seta {
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    text-shadow: 0 0 10px #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px; 
+    transition: background-color 0.3s ease;
+    line-height: 150px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    opacity: 0;
+    font-size: 25px;
 }
-
+.seta:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 .seta-esquerda {
     left: 10px;
 }
-
 .seta-direita {
     right: 10px;
 }
 
 .info-box {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto claro com transparência */
+    background-color: rgba(0, 0, 0, 0.7); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: whitesmoke;
     position: absolute;
@@ -146,41 +161,16 @@ main{
     right: 40%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    border-radius: 10px; /* Borda arredondada para simular um balão */
-    opacity: 0;
+    border-radius: 10px;
     transition: opacity 0.3s ease;
 }
-
-.imagem-container:hover .info-box {
-    opacity: 1;
-}
-
-
 .info-box strong {
-    color: rgb(210, 5, 210); /* Letras roxas dentro de <strong> */
+    color: rgb(155, 0, 160); 
 }
 
-.seta {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto claro com transparência */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: whitesmoke;
-    font-size: 20px;
-    padding: 10px 15px; /* Espaçamento interno para o botão */
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Borda arredondada */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-.seta:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto claro com transparência */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: whitesmoke;
-}
+
 .indicadores {
     display: flex;
     justify-content: center;
