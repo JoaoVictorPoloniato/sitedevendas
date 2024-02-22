@@ -19,6 +19,8 @@ main {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav {
@@ -209,3 +211,56 @@ ul li a {
 .indicadores .indicador.ativo {
     background-color: whitesmoke;
 }
+
+.apresentacao {
+    text-align: center; /* Centralizar horizontalmente */
+    letter-spacing: -1px; /* Ajustar o espaçamento entre as letras */
+    width: 100%;
+}
+
+.separacao {
+    margin: 0;
+    padding: 0;
+}
+
+.placadeinf {
+    margin: 0;
+    padding: 0;
+}
+
+.bloco-informativo {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    color: #000;
+    flex-direction: column;
+
+}
+
+.bloco-informativo .imagem-container {
+    width: 100%;
+    height: 150px; /* Ajuste a altura desejada */
+    overflow: hidden;
+    border-radius: 5px 5px 0 0; /* Borda arredondada apenas no topo */
+}
+
+.bloco-informativo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.outras-secoes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
