@@ -233,13 +233,13 @@ ul li a {
     align-items: center;
     width: 350px;
     margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    box-shadow: 0 0 12px #333;
+    border-radius: 20px;
     height: 300px;
     color: #000;
     flex-direction: column;
-
+    min-height: 350px;
+    text-align: center;
 }
 
 .bloco-informativo .imagem-container {
@@ -255,6 +255,7 @@ ul li a {
     object-fit: cover;
     object-position: center;
     display: block;
+    border-radius: 20px 20px 0 0;
 }
 
 .outras-secoes {
@@ -262,5 +263,9 @@ ul li a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.imagem-container {
+    padding: 0;
 }
 
