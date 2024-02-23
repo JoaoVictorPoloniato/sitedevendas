@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -22,7 +22,7 @@ main{
 .contatos {
     width: 100%;
     text-align: left;
-    border-bottom:1px solid #ccc;
+    border-bottom:0.1vh solid #ccc;
 }
 .main-contatos{
     display: flex;
@@ -36,6 +36,13 @@ main{
     font-size: 12px;
     text-decoration: none;
     margin:10px;
+    margin-right: 30px;
+}
+.contatos span{
+    font-size: 16px;
+    color: #888888;
+    font-weight: 400;
+    margin: auto 0;
 }
 .menu {
     border-bottom:1px solid #ccc;
@@ -129,7 +136,7 @@ main{
 .seta {
     background-color: #011126cc; 
     box-shadow: 0 0 10px #011126;
-    color: whitesmoke;
+    color: #fff;
     text-shadow: 0 0 10px #fff;
     padding: 10px 15px;
     border: none;
@@ -143,24 +150,26 @@ main{
     font-size: 25px;
 }
 .seta:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #034873dc;
 }
 .seta-esquerda {
     left: 10px;
+    padding-left:25px ;
 }
 .seta-direita {
     right: 10px;
+    padding: 10px 20px ;
 }
 .msg-box{
     background-color: #011126cc; 
     box-shadow: 0 0 10px #011126;
     text-align: center;
-    max-width: 500px;
+    max-width: 50%;
     padding: 30px;
     border-radius: 20px;
     position: absolute;
-    top:50px;
-    left:150px;
+    top:10%;
+    left:10%;
 }
 .msg-box h2{
     color:#0388A6;
@@ -170,73 +179,36 @@ main{
     color:#fff;
     text-align: center;
 }
-
-.indicadores {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
-    margin-top: -34px;
-}
-
-.indicadores ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    background-color: transparent;
-}
-
-.indicadores .indicador {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-.indicadores .indicador.ativo {
-    background-color: whitesmoke;
-}
-
 .apresentacao {
-    text-align: center; /* Centralizar horizontalmente */
-    letter-spacing: -1px; /* Ajustar o espaçamento entre as letras */
+    text-align: center; 
     width: 100%;
 }
-
+.apresentacao h1{
+    color:#034873;
+}
 .separacao {
     margin: 0;
     padding: 0;
 }
-
-.placadeinf {
-    margin: 0;
-    padding: 0;
-}
-
 .bloco-informativo {
     display: flex;
     align-items: center;
     width: 350px;
     margin: 10px;
-    box-shadow: 0 0 12px #333;
+    box-shadow: 0 0 10px #011126;
     border-radius: 20px;
-    height: 300px;
-    color: #000;
+    height: 400px;
+    color: #333;
     flex-direction: column;
-    min-height: 350px;
+    min-height: 380px;
     text-align: center;
 }
-
 .bloco-informativo .imagem-container {
     width: 100%;
-    height: 150px; /* Ajuste a altura desejada */
+    height: 150px;
     overflow: hidden;
-    border-radius: 5px 5px 0 0; /* Borda arredondada apenas no topo */
+    border-radius: 5px 5px 0 0; 
 }
-
 .bloco-informativo img {
     width: 100%;
     height: 100%;
@@ -245,7 +217,9 @@ main{
     display: block;
     border-radius: 20px 20px 0 0;
 }
-
+.bloco-informativo p{
+    padding: 20px;
+}
 .outras-secoes {
     width: 100%;
     display: flex;
@@ -275,3 +249,7 @@ button:hover {
     background-color: rgb(180, 5, 255);
 }
 
+.copyright {
+    color: #034873;
+    text-align: center;
+}
