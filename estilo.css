@@ -164,6 +164,8 @@ main{
     border-radius: 10px;
     transition: opacity 0.3s ease;
 }
+
+
 .info-box strong {
     color: rgb(155, 0, 160); 
 }
@@ -174,9 +176,9 @@ main{
 .indicadores {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Ajuste para alinhar na parte inferior */
-    height: 100%; /* Faz com que a altura da seção de indicadores seja igual à altura da seção de imagens */
-    margin-top: -34px; /* Ajuste para posicionar sobre a imagem */
+    align-items: flex-end;
+    height: 100%;
+    margin-top: -34px;
 }
 
 .indicadores ul {
@@ -187,10 +189,10 @@ main{
 }
 
 .indicadores .indicador {
-    width: 2px;
-    height: 2px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.1); /* Quase invisível */
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.5s ease;
@@ -255,5 +257,9 @@ main{
 
 .imagem-container {
     padding: 0;
+}
+
+.submenu.show-submenu {
+    display: block;
 }
 
