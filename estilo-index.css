@@ -53,7 +53,8 @@ main{
     display: flex;
     flex-direction: row;
 }
-.main-menu a{
+.menu  a{
+    display: block;
     margin: auto 1vh;
 }
 .menu .logo {
