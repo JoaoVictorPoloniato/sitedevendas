@@ -82,3 +82,18 @@ document.addEventListener('DOMContentLoaded', function () {
         imagens[imagemAtualIndex].style.display = 'none';
     }
 });
+
+
+var numeros = ["5566996165254", "5519988885448"];
+var mensagem = "Olá! Gostaria de solicitar um orçamento.";
+
+function abrirWhatsApp() {
+
+    var numeroEscolhido = numeros[Math.floor(Math.random() * numeros.length)];
+    
+    var linkWhatsApp = "https://wa.me/" + numeroEscolhido + "?text=" + encodeURIComponent(mensagem);
+    
+    document.getElementById("orcamentoBtn").href = linkWhatsApp;
+    
+    window.open(linkWhatsApp, "_blank");
+}
