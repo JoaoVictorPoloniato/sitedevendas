@@ -1,0 +1,15 @@
+.imagem-farma {
+    width: 100%;
+    height: auto; 
+}
+
+.placadeinf-farma {
+    color: #333;
+}
+
+.seta-para-baixo {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    margin-top: 10px; 
+}
