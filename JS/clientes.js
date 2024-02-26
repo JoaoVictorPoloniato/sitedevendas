@@ -15,16 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let startX = 0;
     let isDragging = false;
 
-   // slider.addEventListener("mousedown", handleDragStart);
-   // slider.addEventListener("touchstart", handleDragStart);
-
-   // slider.addEventListener("mousemove", handleDragMove);
-   // slider.addEventListener("touchmove", handleDragMove);
-
-   // slider.addEventListener("mouseup", handleDragEnd);
-   // slider.addEventListener("touchend", handleDragEnd);
-
-   function handleDragStart(e) {
+    function handleDragStart(e) {
         isDragging = true;
         startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
     }
@@ -46,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (Math.abs(diffX) > clientWidth / 2) {
             currentIndex = diffX > 0 ? currentIndex - 1 : currentIndex + 1;
-         }
+        }
 
         updateSlider();
 
@@ -64,13 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlider();
     }
 
-    const intervalId = setInterval(autoSlide, 3000);
+    let intervalId = setInterval(autoSlide, 3000);
 
     slider.addEventListener("mouseenter", function () {
         clearInterval(intervalId);
     });
 
     slider.addEventListener("mouseleave", function () {
-        setInterval(autoSlide, 3000);
+        intervalId = setInterval(autoSlide, 3000);
     });
 });
