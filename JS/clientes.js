@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const clientWidth = clientes[0].offsetWidth;
     const visibleClientes = Math.floor(container.offsetWidth / clientWidth);
 
-    // Clone os clientes para criar um loop infinito
     for (let i = 0; i < visibleClientes; i++) {
         const clone = clientes[i].cloneNode(true);
         container.appendChild(clone);
@@ -15,15 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     let startX = 0;
     let isDragging = false;
-
-    slider.addEventListener("mousedown", handleDragStart);
-    slider.addEventListener("touchstart", handleDragStart);
-
-    slider.addEventListener("mousemove", handleDragMove);
-    slider.addEventListener("touchmove", handleDragMove);
-
-    slider.addEventListener("mouseup", handleDragEnd);
-    slider.addEventListener("touchend", handleDragEnd);
 
     function handleDragStart(e) {
         isDragging = true;
@@ -65,13 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlider();
     }
 
-    const intervalId = setInterval(autoSlide, 3000);
+    let intervalId = setInterval(autoSlide, 3000);
 
     slider.addEventListener("mouseenter", function () {
         clearInterval(intervalId);
     });
 
     slider.addEventListener("mouseleave", function () {
-        setInterval(autoSlide, 3000);
+        intervalId = setInterval(autoSlide, 3000);
     });
 });
