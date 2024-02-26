@@ -263,60 +263,57 @@ button:hover {
 .apresentacao p{
     font-size: 1.1vw;
 }
-/* Adicione ao seu arquivo de estilo.css ou crie um novo arquivo para estes estilos */
-
-.clientes {
+.perfil{
+    margin:2vw 0;   
+    display: flex;
+    flex-direction: row;
+}
+.perfil-informativo{
     text-align: center;
-    margin-top: 30px;
+    width: 33%;
 }
-
-.clientes h2 {
-    font-size: 24px;
+.imagem-informativa img{
+    height: 6vw;
 }
-
+.perfil-informativo h3{
+    font-size: 1.2vw;
+    color: #011126;
+}
+.clienteh1{
+    color:#034873;
+    margin: 2vw;
+    padding: 0;
+    font-size: 2vw;
+    margin: 0 auto;
+}
+.clientes {
+    margin: 5vw 0;
+    text-align: center;
+}
 .clientes-slider {
     overflow: hidden;
     position: relative;
     width: 80%;
     margin: 0 auto;
+    border-radius: 5vw;
 }
-
 .clientes-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    border-radius: 50vw;
 }
-
 .cliente {
-    flex: 0 0 200px;
+    flex: 0 0 7vw;
     margin-right: 10px;
     text-align: center;
 }
-
 .cliente img {
-    max-width: 100%;
-    border-radius: 50%;
+    height: 7vw;
+    border-radius: 5vw;
 }
-
-/* Adicione ao seu arquivo de estilo.css */
-
 .setinhas {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    display: none;
 }
-
-.setinha {
-    font-size: 24px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #011126;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-/* Adicione ao seu arquivo de estilo.css */
-
 .setinha-esquerda {
     order: 1;
 }
