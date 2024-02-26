@@ -53,9 +53,12 @@ main{
     display: flex;
     flex-direction: row;
 }
+.menu  a{
+    display: block;
+    margin: auto 1vh;
+}
 .menu .logo {
     height: 4vw;
-    margin: auto 1vh;
 }
 .menu nav {
     display: flex;
