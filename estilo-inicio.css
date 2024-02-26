@@ -26,98 +26,6 @@ main{
     display: flex;
     flex-direction: column;
 }
-.contatos {
-    width: 100%;
-    text-align: left;
-    border-bottom:0.1vh solid #ccc;
-}
-.main-contatos{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-.contatos a {
-    display: inline-block;
-    color: #888888;
-    font-weight: 400;
-    font-size: 1vw;
-    text-decoration: none;
-    margin:1vw;
-    margin-right: 3vw;
-}
-.contatos span{
-    font-size: 1.5vw;
-    color: #888888;
-    font-weight: 400;
-    margin: auto 0;
-}
-.menu {
-    border-bottom:0.1vh solid #ccc;
-    display: flex;
-}
-.main-menu{
-    display: flex;
-    flex-direction: row;
-}
-.menu .logo {
-    height: 4vw;
-    margin: auto 1vh;
-}
-.menu nav {
-    display: flex;
-    height: 5vw;
-}
-.menu nav ul{
-    display: flex;
-    flex-direction: row;
-    margin:0;
-    padding: 0;
-    list-style: none;
-}
-.menu nav ul li {
-    max-width:15vw;
-    display: flex;
-    text-align: center;
-    padding: 0 1vw;
-}
-.menu nav ul li span{
-    height: 100%;
-    display: flex;
-    font-size: 1.1vw;
-    align-content: center;
-    flex-wrap: wrap;
-}
-.menu nav ul li:hover span{
-    color:#034873;
-    text-shadow: 0 0 0.1vw #011126;
-    cursor:pointer;
-}
-.menu nav ul li ul{
-    display: none;
-    position: absolute;
-    margin-top:5vw;
-    border-top: 0.2vw solid #034873;
-    z-index: 50;
-    background: #fff;
-}
-.menu nav ul li:hover ul{
-    display: block;
-}
-.menu nav ul li ul li{
-    min-width: 20vw;
-    padding: 0.5vw 0.5vw;
-}
-.menu nav ul li ul li a{
-    text-decoration: none;
-    color:#333;
-    display: block;
-    font-size: 1vw;
-}
-.menu nav ul li ul li:hover a{
-    color:#034873;
-    text-shadow: 0 0 0.1vw #011126;
-    
-}
 .imagens-section {
     text-align: center;
     position: relative;
@@ -256,6 +164,9 @@ button:hover {
     color:#fff;
     transition:0.5s;
 }
+footer{
+    border:none;
+}
 footer p{
     margin: 0;
     padding: 0;
@@ -266,7 +177,7 @@ footer p{
     text-align: center;
     background-color: #011126;
     margin: 0;
-    padding: 10px;
+    padding: 1vw;
 }
 .apresentacao p{
     font-size: 1.1vw;
