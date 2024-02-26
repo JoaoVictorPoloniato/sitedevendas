@@ -256,9 +256,17 @@ button:hover {
     color:#fff;
     transition:0.5s;
 }
+footer p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1vw;
+}
 .copyright {
-    color: #034873;
+    color: #fff;
     text-align: center;
+    background-color: #011126;
+    margin: 0;
+    padding: 10px;
 }
 .apresentacao p{
     font-size: 1.1vw;
@@ -323,14 +331,32 @@ button:hover {
 .video-container{
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 40vw;
     overflow: hidden;
+
 }
 #video-background {
     position: absolute;
-    top: -50%;
+    top: -30%;
     left: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+}
+.video-container div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vw;
+    background-color: #011126af;
+    text-align: center;
+    font-size: 1.2vw;
+    color: #fff;
+}
+.video-container div h2{
+    margin-top:15vw;
+    font-size: 3vw;
+}
+.video-container div button{
+    margin-top:1vw;
 }
