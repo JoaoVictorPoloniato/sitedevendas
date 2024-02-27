@@ -12,60 +12,46 @@ body, html {
 .farma-imagem {
     position: relative;
     text-align: center;
-    position: relative;
-    height: 30vw;
-}
-
-.imagem-farma {
-    width: 100%;
-    height: -100vh;
+    height: 100vh;
     background-image: url('../imagens/farmacia.jpg');
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000008f;
 }
 
 .placadeinf-farma {
+    background-color: #011126cc; 
+    box-shadow: 0 0 1vw #011126;
+    text-align: center;
+    max-width: 20vw;
+    padding: 2vw;
+    border-radius: 2vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-}
-
-.seta-para-baixo {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    margin-top: -37px;
-    text-align: center;
+    top: 20%;
 }
 
 .seta-para-baixo button {
-    background-color: #007bff;
+    background-color: #ffffff00;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     cursor: pointer;
+    margin-top: 400px;
 }
 
-button {
-    background-color: #fff;
-    color: #034873;
-    padding: 1vw 2vw;
-    border: none;
-    border-radius: 2vw;
-    cursor: pointer;
-    font-size: 1vw;
-    margin-bottom:1vw;
+#conteudo-abaixo {
+    padding: 20px;
+    background-color: #fff; 
+    color: #000;
 }
 
 button:hover {
-    background-color: #034873;
-    color:#fff;
-    transition:0.5s;
+    color: #fff;
+    transition: 0.5s;
 }
-
