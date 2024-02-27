@@ -42,7 +42,17 @@ body, html {
     padding: 10px;
     border: none;
     cursor: pointer;
-    margin-top: 400px;
+    margin-top: 500px;
+    animation: moveUpDown 1s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    from {
+        margin-top: 500;
+    }
+    to {
+        margin-top: 550px;
+    }
 }
 
 #conteudo-abaixo {
@@ -50,6 +60,7 @@ body, html {
     background-color: #fff; 
     color: #000;
 }
+
 
 button:hover {
     color: #fff;
