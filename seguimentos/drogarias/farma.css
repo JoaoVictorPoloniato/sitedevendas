@@ -1,4 +1,9 @@
 
+:root {
+    --size: 50px; /* tamanho do corte */
+    --gap: 10px;  /* a lacuna */
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -31,6 +36,7 @@ body {
     top:29vw;
     right:0;
     border-radius: 2vw 0 0 0;
+    
   }
   div.esquerda{
     position: absolute;
@@ -40,6 +46,7 @@ body {
     top:29vw;
     left:0;
     border-radius: 0 2vw 0 0;
+
   }
     div.centro {
       position: absolute;
