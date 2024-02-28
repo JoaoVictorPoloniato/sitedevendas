@@ -1,9 +1,5 @@
-:root {
-    --size: 50px;
-    --gap: 10px;
-  }
-  
-  body {
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -12,7 +8,7 @@
   .farma-imagem {
     position: relative;
     text-align: center;
-    height: 80vh;
+    height: 35vw;
     background-image: url('../../imagens/farmaceutico.png');
     background-size: cover;
     background-position: center;
@@ -24,11 +20,39 @@
     justify-content: center;
     background-color: #0000008f;
     overflow: hidden;
-    mask: 
-      linear-gradient(#000 0 0) top/100% calc(100% - 1.5*var(--size)) no-repeat,
-      radial-gradient(farthest-side, #000 98%, #0000) bottom/calc(4*var(--size)) calc(8*var(--size)) no-repeat;
+
   }
-  
+  div.direita{
+    position: absolute;
+    width:47%;
+    height: 6vw;
+    background-color: #fff;
+    float:right;
+    top:29vw;
+    right:0;
+    border-radius: 2vw 0 0 0;
+  }
+  div.esquerda{
+    position: absolute;
+    width:47%;
+    height: 6vw;
+    background-color: #fff;
+    top:29vw;
+    left:0;
+    border-radius: 0 2vw 0 0;
+  }
+    div.centro {
+      position: absolute;
+      width: 6%;
+      height: 6vw;
+      top: 29vw;
+      background: #fff;
+      border-radius: - 20px;
+
+  }
+
+
+
   .seta-para-baixo {
     position: absolute;
     bottom: 20px;
