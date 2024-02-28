@@ -46,8 +46,8 @@ body {
       width: 6%;
       height: 6vw;
       top: 29vw;
-      background: #fff;
-      border-radius: - 20px;
+      background: 
+      radial-gradient(circle at top , #0000 80%, #fff 70%);
 
   }
 
