@@ -104,7 +104,7 @@ body {
     position: relative;
     text-align: center;
     height: 30vw;
-    background-image: url('../../imagens/farmacia.jpg');
+    background-image: url('https://plus.unsplash.com/premium_photo-1661777361143-4e7a5cf85cb2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,9 +115,10 @@ body {
     justify-content: center;
     background-color: #0000008f;
     overflow: hidden;
-    width: 25vw;
+    width: 29vw;
     border-radius: 3vw;
     box-shadow: 0 0 15px #333;
+    left: -3%;
 
 }
 
@@ -155,7 +156,7 @@ body {
   position: relative;
   text-align: center;
   height: 30vw;
-  background-image: url('../../imagens/farmacia.jpg');
+  background-image: url('https://img.freepik.com/fotos-gratis/farmaceutica-jovem-hispanica-sorrindo-confiante-em-pe-com-gesto-de-bracos-cruzados-na-farmacia_839833-7087.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,9 +167,10 @@ body {
   justify-content: center;
   background-color: #0000008f;
   overflow: hidden;
-  width: 25vw;
+  width: 29vw;
   border-radius: 3vw;
   box-shadow: 0 0 15px #333;
+  left: -3%;
 
 }
 
@@ -206,7 +208,7 @@ body {
   position: relative;
   text-align: center;
   height: 30vw;
-  background-image: url('../../imagens/farmacia.jpg');
+  background-image: url('https://www.linx.com.br/app/uploads/2021/12/Imagens_1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -217,8 +219,9 @@ body {
   justify-content: center;
   background-color: #0000008f;
   overflow: hidden;
-  width: 25vw;
+  width: 29vw;
   border-radius: 3vw;
   box-shadow: 0 0 15px #333;
+  left: -3%;
 
 }
