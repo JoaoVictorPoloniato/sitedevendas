@@ -1,8 +1,4 @@
 
-:root {
-    --size: 50px; /* tamanho do corte */
-    --gap: 10px;  /* a lacuna */
-  }
 
 body {
     margin: 0;
@@ -27,73 +23,202 @@ body {
     overflow: hidden;
 
   }
-  div.direita{
-    position: absolute;
-    width:47%;
-    height: 6vw;
-    background-color: #fff;
-    float:right;
-    top:29vw;
-    right:0;
-    border-radius: 2vw 0 0 0;
-    
-  }
-  div.esquerda{
-    position: absolute;
-    width:47%;
-    height: 6vw;
-    background-color: #fff;
-    top:29vw;
-    left:0;
-    border-radius: 0 2vw 0 0;
-
-  }
-    div.centro {
-      position: absolute;
-      width: 6%;
-      height: 6vw;
-      top: 29vw;
-      background: 
-      radial-gradient(circle at top , #0000 80%, #fff 70%);
-
-  }
-
-
 
   .seta-para-baixo {
     position: absolute;
-    bottom: 20px;
+    bottom: 145px;
     animation: moveButton 2s infinite alternate;
   }
   
   button {
     background-color: #4caf4f00;
-    color: white;
-    padding: 15px 32px;
-    font-size: 16px;
+    color: #034873;
+    padding: 20px 32px;
+    font-size: 25px;
     cursor: pointer;
     transition: transform 0.3s ease;
     border: none;
     border-radius: 50%;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
   }
   
   @keyframes moveButton {
     0% {
-      transform: translateY(20px);
+      transform: translateY(10px);
     }
     100% {
-      transform: translateY(50px);
+      transform: translateY(35px);
     }
   }
+
+  .seta-para-baixo {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: moveButton 2s infinite alternate;
+    z-index: 1;
+  }
   
-  .conheca-text {
+  .material-symbols-outlined  {
     display: block;
     font-size: 14px;
     margin-top: 5px;
   }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#conteudo-abaixo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f5f1f1;
+}
+
+#conteudo-abaixo img {
+  width: 20%;
+  max-width: 800px;
+  height: 20%;
+  border-radius: 10px;
+}
+
+#conteudo-abaixo p {
+  flex: 1;
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+.img-big {
+    position: relative;
+    text-align: center;
+    height: 30vw;
+    background-image: url('../../imagens/farmacia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000008f;
+    overflow: hidden;
+    width: 25vw;
+    border-radius: 3vw;
+    box-shadow: 0 0 15px #333;
+
+}
+
+.seta-para-baixo-soft {
+  position: absolute;
+  bottom: -525px;
+  animation: moveButton 2s infinite alternate;
+
+  left: 45%;
   
+}
+
+#conteudo-soft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #c2c2c2;
+}
+
+#conteudo-soft img {
+  width: 20%;
+  max-width: 800px;
+  height: 20%;
+  border-radius: 10px;
+}
+
+#conteudo-soft p {
+  flex: 1;
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+.img-soft {
+  position: relative;
+  text-align: center;
+  height: 30vw;
+  background-image: url('../../imagens/farmacia.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000008f;
+  overflow: hidden;
+  width: 25vw;
+  border-radius: 3vw;
+  box-shadow: 0 0 15px #333;
+
+}
+
+.seta-para-baixo-cloud {
+  position: absolute;
+  bottom: -1200px;
+  animation: moveButton 2s infinite alternate;
+
+  left: 45%;
+  
+}
+
+#conteudo-cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #3a3939;
+}
+
+#conteudo-cloud img {
+  width: 20%;
+  max-width: 800px;
+  height: 20%;
+  border-radius: 10px;
+}
+
+#conteudo-cloud p {
+  flex: 1;
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+.img-cloud {
+  position: relative;
+  text-align: center;
+  height: 30vw;
+  background-image: url('../../imagens/farmacia.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000008f;
+  overflow: hidden;
+  width: 25vw;
+  border-radius: 3vw;
+  box-shadow: 0 0 15px #333;
+
+}
