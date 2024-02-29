@@ -83,9 +83,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 85vh;
   background-color: #f5f1f1;
+  text-align:left;
 }
+
 
 #conteudo-abaixo img {
   width: 20%;
@@ -94,10 +96,26 @@ body {
   border-radius: 10px;
 }
 
-#conteudo-abaixo p {
+#conteudo-abaixo h4 {
   flex: 1;
-  margin-left: 20px;
+  margin-left: -10px;
   max-width: 400px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -5%;
+  font-weight: 400;
+  font-size: 0.9vw;
+}
+
+.titulo {
+  flex: 1;
+  margin-left: -25%;
+  margin-top: -25%;
+  max-width: 400px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 400;
+  position: absolute;
+  left: 76.5%;
 }
 
 .img-big {
@@ -118,7 +136,7 @@ body {
     width: 29vw;
     border-radius: 3vw;
     box-shadow: 0 0 15px #333;
-    left: -3%;
+    left: -10%;
 
 }
 
@@ -135,21 +153,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  background-color: #c2c2c2;
+  height: 85vh;
+  background-color: #f5f5f5;
+  text-align:left;
 }
 
 #conteudo-soft img {
+  position: absolute;
   width: 20%;
   max-width: 800px;
   height: 20%;
   border-radius: 10px;
 }
 
-#conteudo-soft p {
+#conteudo-soft h4 {
+  position: absolute;
   flex: 1;
-  margin-left: 20px;
+  margin-left: -47vw;
   max-width: 400px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -5%;
+  font-weight: 400;
+  font-size: 0.9vw;
+}
+
+#conteudo-soft p {
+  text-align: left;
+  flex: 1;
+  margin-left: -63%;
+  margin-top: -25%;
+  max-width: 400px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 400;
+  position: absolute;
+  left: 76.5%;
 }
 
 .img-soft {
@@ -170,7 +208,7 @@ body {
   width: 29vw;
   border-radius: 3vw;
   box-shadow: 0 0 15px #333;
-  left: -3%;
+  left: 15%;
 
 }
 
@@ -187,8 +225,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  background-color: #3a3939;
+  height: 85vh;
+  background-color: #f5f1f1;
+  text-align:left;
 }
 
 #conteudo-cloud img {
@@ -197,6 +236,17 @@ body {
   height: 20%;
   border-radius: 10px;
 }
+
+#conteudo-cloud h4{
+  flex: 1;
+  margin-left: -10px;
+  max-width: 400px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -5%;
+  font-weight: 400;
+  font-size: 0.9vw;
+}
+
 
 #conteudo-cloud p {
   flex: 1;
@@ -222,6 +272,63 @@ body {
   width: 29vw;
   border-radius: 3vw;
   box-shadow: 0 0 15px #333;
-  left: -3%;
-
+  left: -10%;
 }
+
+
+.saiba-mais-btn::before {
+  margin: auto;
+  float: right;
+}
+
+.saiba-mais-btn {
+  float: center;
+  border-radius: 5vw 20vw 5vw 20vw;
+  padding: 0 2vw;
+  height: 4vw;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #011126, #034873);
+  color: #fff;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  transition: box-shadow 0.3s, font-weight 0.3s, background 0.3s;
+  margin-top: 12%;
+  position: absolute;
+  left: 52%;
+}
+
+.saiba-mais-btn:hover {
+  box-shadow: 0 0 0.5vw #011126;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #034873, #011126);
+}
+
+.saiba-mais-btn2::before {
+  margin: auto;
+  float: right;
+}
+
+.saiba-mais-btn2 {
+  float: center;
+  border-radius: 5vw 20vw 5vw 20vw;
+  padding: 0 2vw;
+  height: 4vw;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #011126, #034873);
+  color: #fff;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  transition: box-shadow 0.3s, font-weight 0.3s, background 0.3s;
+  margin-top: 12%;
+  position: absolute;
+  left: 13%;
+}
+
+.saiba-mais-btn2:hover {
+  box-shadow: 0 0 0.5vw #011126;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #034873, #011126);
+}
+
