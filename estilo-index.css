@@ -119,18 +119,21 @@ iframe{
     border:none;
     height: calc(100vh - 8.3vw);
 }
+.sobre-nos::before{
+    margin: auto;
+    float: right;
+}
 .sobre-nos{
-    margin: auto 0;
-    margin-left:auto;
-    margin-right: 20vw;
+    float: rigth;
+    margin-left: 30vw;
     border-radius: 5vw 20vw 5vw 20vw;
     padding: 0 2vw;
-    height:90%;
+    height:4vw;
     border:none;
     cursor:pointer;
     background: linear-gradient(to bottom, #011126, #034873);
     color: #fff;
-    
+    font-size: 1vw;
     font-family: "Roboto", sans-serif;
 }
 .sobre-nos:hover{
