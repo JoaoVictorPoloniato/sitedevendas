@@ -332,3 +332,19 @@ body {
   background: linear-gradient(to bottom, #034873, #011126);
 }
 
+.sistemas {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px; 
+  line-height: 100px; 
+  text-align: center; 
+  color: orangered;
+  background-color: yellow;
+  transition: background-color 0.3s; 
+
+}
+
+.sistemas:hover {
+  background-color: orange; /* Muda a cor de fundo para laranja ao passar o mouse */
+}
