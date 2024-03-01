@@ -143,6 +143,7 @@ body {
 .seta-para-baixo-soft {
   position: absolute;
   bottom: -525px;
+  top: 165%;
   animation: moveButton 2s infinite alternate;
 
   left: 45%;
@@ -213,10 +214,12 @@ body {
 }
 
 .seta-para-baixo-cloud {
+ 
   position: absolute;
   bottom: -1200px;
+  top: 260%;
   animation: moveButton 2s infinite alternate;
-
+  height: 10vw;
   left: 45%;
   
 }
@@ -285,7 +288,7 @@ body {
   float: center;
   border-radius: 5vw 20vw 5vw 20vw;
   padding: 0 2vw;
-  height: 4vw;
+  height: 3vw;
   border: none;
   cursor: pointer;
   background: linear-gradient(to bottom, #011126, #034873);
@@ -293,9 +296,9 @@ body {
   font-size: 1vw;
   font-family: "Roboto", sans-serif;
   transition: box-shadow 0.3s, font-weight 0.3s, background 0.3s;
-  margin-top: 12%;
+  margin-top: 2%;
   position: absolute;
-  left: 52%;
+  left: 58%;
 }
 
 .saiba-mais-btn:hover {
@@ -313,7 +316,7 @@ body {
   float: center;
   border-radius: 5vw 20vw 5vw 20vw;
   padding: 0 2vw;
-  height: 4vw;
+  height: 3vw;
   border: none;
   cursor: pointer;
   background: linear-gradient(to bottom, #011126, #034873);
@@ -321,9 +324,9 @@ body {
   font-size: 1vw;
   font-family: "Roboto", sans-serif;
   transition: box-shadow 0.3s, font-weight 0.3s, background 0.3s;
-  margin-top: 12%;
+  margin-top: 10%;
   position: absolute;
-  left: 13%;
+  left: 23%;
 }
 
 .saiba-mais-btn2:hover {
@@ -334,17 +337,48 @@ body {
 
 .sistemas {
   position: relative;
-  display: inline-block;
-  width: 100px;
+  left: -1000%;
+  width: 50px;
   height: 100px; 
-  line-height: 100px; 
-  text-align: center; 
   color: orangered;
-  background-color: yellow;
   transition: background-color 0.3s; 
 
 }
 
 .sistemas:hover {
-  background-color: orange; /* Muda a cor de fundo para laranja ao passar o mouse */
+  background-color: orange;
+}
+
+.descricoes1 p {
+  position: absolute;
+  top: 148%;
+}
+
+.descricoes2 p {
+  position: absolute;
+  top: 243%;
+  padding-left: 4%;
+  left:  80%;
+}
+
+.descricoes3 p {
+  position: absolute;
+  top: 336%;
+  left: 50%;
+}
+
+footer{
+  border:none;
+}
+footer p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.1vw;
+}
+.copyright {
+  color: #fff;
+  text-align: center;
+  background-color: #011126;
+  margin: 0;
+  padding: 1vw;
 }
