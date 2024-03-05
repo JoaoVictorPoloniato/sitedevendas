@@ -1,0 +1,185 @@
+::-webkit-scrollbar {
+  width: 0px;  
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.farma-imagem {
+    width: 100%;
+    height: 30vw;
+    background-image: url('../../imagens/farmaceutico.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0000008f;
+  }
+  .farma-imagem button {
+    text-align: left;
+    background-color: #034873;
+    margin:1vw 0;
+    color: #fff;
+    padding: 1.2vw;
+    min-width: 20vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 0px 1vw 3vw 0;
+  }
+  .farma-imagem button:hover {
+    transform: scale(1.1);
+  }
+  .proximo-conteudo {
+    animation: moveButton 2s infinite alternate;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    margin: 1.5vw 0;
+  }
+  .proximo-conteudo button{
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+  .proximo-conteudo button span{
+    font-size: 2.8vw;
+    color: #034873;
+  }
+  @keyframes moveButton {
+    0% {
+      transform: translateY(-1vw);
+    }
+    100% {
+      transform: translateY(1vw);
+    }
+  }
+  #conteudo-big {
+    display: flex;
+    height: 40vw;
+    background-color: #f1f1f1;
+    justify-content: center;
+  }
+.img-big {
+    margin:auto 0;
+
+    height: 30vw;
+    background-image: url('https://plus.unsplash.com/premium_photo-1661777361143-4e7a5cf85cb2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0000008f;
+    overflow: hidden;
+    width: 30vw;
+    border-radius: 3vw;
+    box-shadow: 0 0 15px #333;
+}
+#conteudo-soft {
+  display: flex;
+  height: 40vw;
+  background-color: #f1f1f1;
+  justify-content: center;
+}
+.img-soft {
+  margin:auto 0;
+  height: 30vw;
+  background-image: url('https://img.freepik.com/fotos-gratis/farmaceutica-jovem-hispanica-sorrindo-confiante-em-pe-com-gesto-de-bracos-cruzados-na-farmacia_839833-7087.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #0000008f;
+  overflow: hidden;
+  width: 30vw;
+  border-radius: 3vw;
+  box-shadow: 0 0 15px #333;
+}
+#conteudo-farmacloud {
+  display: flex;
+  height: 40vw;
+  background-color: #f1f1f1;
+  justify-content: center;
+}
+
+.img-farmacloud {
+  margin:auto 0;
+  height: 30vw;
+  background-image: url('https://www.linx.com.br/app/uploads/2021/12/Imagens_1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  background-color: #0000008f;
+  overflow: hidden;
+  width: 30vw;
+  border-radius: 3vw;
+  box-shadow: 0 0 15px #333;
+}
+.descricoes{
+  margin: auto 5vw;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+h2{
+  font-size: 2vw;
+}
+p{
+  text-align: justify;
+  font-size: 1.3vw;
+}
+.saiba-mais::before{
+  margin: auto;
+  float: right;
+}
+.saiba-mais{
+  float: rigth;
+  margin-left: 38%;
+  border-radius: 5vw; 
+  padding: 0 2vw;
+  height:4vw;
+  border:none;
+  cursor:pointer;
+  background: linear-gradient(to bottom, #011126, #034873);
+  color: #fff;
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+}
+.saiba-mais:hover{
+  box-shadow: 0 0 0.5vw #011126;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #034873, #011126);
+}
+footer{
+  border:none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #011126;
+}
+footer p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.1vw;
+}
+.copyright {
+  color: #fff;
+  text-align: center;
+  background-color: #011126;
+  margin: 0;
+  padding: 1vw;
+}
+
