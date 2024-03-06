@@ -208,3 +208,25 @@ body {
   margin: 2vw 0;
 }
 
+.estatisticas {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  padding: 2vw;
+}
+
+.estatistica-item {
+  text-align: center;
+}
+
+.estatistica-item h4 {
+  color: #4a3872;
+  font-size: 1.5vw;
+}
+
+.estatistica-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4vw;
+  margin-top: 0.6vw;
+  color: #7724c5;
+}
