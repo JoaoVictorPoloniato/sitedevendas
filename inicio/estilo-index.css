@@ -37,7 +37,7 @@ main{
     height: 30vw;
     background-color: rgba(0, 0, 0, 0.1);
 	background-blend-mode: overlay;
-	background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -275,4 +275,118 @@ footer p{
     padding: 0;
     font-size: 2.5vw;
     font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        width: 95%;
+    }
+    .imagens-section {
+        width: 100%;
+        height: 70vw;
+    }
+    .background-image{
+        width: 100%;
+        height: 70vw;
+        background-position:right;
+    }
+    .linxptudo{
+        background-position-x:-200vw;
+    }
+    .seta span{
+        display: none;
+    }
+    .apresentacao h1{
+        font-size: 8vw;
+    }
+    .outras-secoes {
+        flex-direction: column;
+    }
+    .bloco-informativo {
+        width: 100%;
+        border-radius: 5vw;
+        margin: 8vw 0;
+    }
+    .bloco-informativo img {
+        width: 100%;
+        height: 50vw;
+    }
+    .bloco-informativo h3{
+        font-size: 5vw;
+        padding: 0 4vw;
+    }
+    .bloco-informativo p{
+        font-size: 3.5vw;
+        padding: 3vw 5vw;
+    }
+    button {
+        padding: 3vw 5vw;
+        border-radius: 5vw;
+        font-size: 3vw;
+        margin-bottom:3vw;
+    }
+    .perfil{
+        margin:5vw 0;   
+        flex-direction: column;
+    }
+    .perfil-informativo{
+        text-align: center;
+        width: 100%;
+    }
+    .imagem-informativa img{
+        height: 20vw;
+    }
+    .perfil-informativo h3{
+        font-size: 4vw;
+    }
+    .apresentacao p{
+        font-size: 3vw;
+    }
+    .clienteh1{
+        margin: 5vw;
+        font-size: 5vw;
+    }
+    .clientes {
+        margin: 2vw 0;
+    }
+    .clientes-slider {
+        width: 100%;
+        border-radius: 5vw;
+    }
+    .clientes-container {
+        transition: transform 0.5s ease-in-out;
+    }
+    .cliente {
+        flex: 0 0 25vw;
+        margin-right: 20px;
+    }
+    .cliente img {
+        height: 25vw;
+        border-radius: 50%;
+    }
+    .video-container{
+        height: 90vw;
+    }
+    .video-container div{
+        height: 90vw;
+    }
+    .video-container div h2{
+        margin-top:35vw;
+    }
+    footer{
+        border:none;
+    }
+    footer p{
+        margin: 0;
+        padding: 0;
+        font-size: 3vw;
+    }
+    .copyright {
+        color: #fff;
+        text-align: center;
+        background-color: #011126;
+        margin: 0;
+        padding: 1vw;
+    }
+
 }
