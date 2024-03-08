@@ -103,41 +103,88 @@ main{
 .menu nav ul li ul li{
     min-width: 20vw;
     padding: 0.5vw 0.5vw;
+    width: 100%;
 }
 .menu nav ul li ul li a{
     text-decoration: none;
     color:#333;
     display: block;
     font-size: 1vw;
+    width: 100%;
+    text-align: left;
 }
 .menu nav ul li ul li:hover a{
     color:#034873;
     text-shadow: 0 0 0.1vw #011126;
-    
 }
 iframe{
     border:none;
     height: calc(100vh - 8.3vw);
 }
-.sobre-nos::before{
-    margin: auto;
-    float: right;
-}
-.sobre-nos{
-    float: rigth;
-    margin-left: 30vw;
-    border-radius: 5vw 20vw 5vw 20vw; 
-    padding: 0 2vw;
-    height:4vw;
-    border:none;
-    cursor:pointer;
-    background: linear-gradient(to bottom, #011126, #034873);
-    color: #fff;
-    font-size: 1vw;
-    font-family: "Roboto", sans-serif;
-}
-.sobre-nos:hover{
-    box-shadow: 0 0 0.5vw #011126;
-    font-weight: 700;
-    background: linear-gradient(to bottom, #034873, #011126);
+@media screen and (max-width: 500px) {
+    body{
+        width: 100%;
+    }
+    main{
+        width: 95%;
+    }
+    .contatos{
+        position: absolute;
+        border: none;
+        margin-left: 20%;
+        text-align: center;
+        width: 80%;
+        margin-top:3.5vw;
+    }
+    .main-contatos{
+        flex-direction: column;
+    }
+    .contatos a {
+        font-size: 3vw;
+        font-weight: 700;
+        color: #011126;
+    }
+    .contatos span{
+        display: none;
+    }
+    .main-menu{
+        height: 28vw;
+    }
+    .menu nav{
+        position: absolute;
+        height: 10vw;
+        width: 95%;
+        bottom:calc(100vh - 28vw);
+    }
+    .menu a{
+        margin-top: 2vw;
+    }
+    .menu .logo {
+        height: 15vw;
+    }
+    .menu nav ul li span{
+        font-size: 5.2vw;
+    }
+    .menu nav ul{
+        width: 100%;
+        justify-content: space-between; 
+    }
+    .menu nav ul li {
+        max-width: none;
+    }
+    .menu nav ul li ul{
+        position: absolute;
+        left: -3vw;
+        width: 80vw;
+        margin-top: 10vw;
+        border-top: 1vw solid #034873;
+    }
+    .menu nav ul li ul li a{
+        font-size: 5vw;
+    }
+    iframe{
+        border:none;
+        height: calc(100vh - 28vw);
+    }
+
 }
