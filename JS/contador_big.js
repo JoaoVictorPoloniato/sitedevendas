@@ -13,10 +13,10 @@ function startCounters() {
 
 
     const incrementRates = {
-        estadosAtendidos: 0.2,  
-        numeroClientes: 5,    
-        numeroUsuarios: 20,    
-        numeroUnidades: 0.1     
+        estadosAtendidos: 0.05,  
+        numeroClientes: 1.5,    
+        numeroUsuarios: 5,    
+        numeroUnidades: 0.015     
     };
 
     function updateCounters() {
