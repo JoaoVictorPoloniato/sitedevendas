@@ -154,7 +154,7 @@ iframe{
         position: absolute;
         height: 10vw;
         width: 95%;
-        bottom:calc(100vh - 28vw);
+        top:18vw;
     }
     .menu a{
         margin-top: 2vw;
