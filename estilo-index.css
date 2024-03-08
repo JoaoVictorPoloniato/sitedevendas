@@ -174,8 +174,8 @@ iframe{
     }
     .menu nav ul li ul{
         position: absolute;
-        left: -3vw;
-        width: 80vw;
+        left: 0.1vw;
+        width: 100%;
         margin-top: 10vw;
         border-top: 1vw solid #034873;
     }

@@ -297,27 +297,30 @@ footer p{
         display: none;
     }
     .apresentacao h1{
-        font-size: 8vw;
+        font-size: 4vw;
     }
     .outras-secoes {
         flex-direction: column;
     }
     .bloco-informativo {
-        width: 100%;
+        width: 80%;
         border-radius: 5vw;
-        margin: 8vw 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4vw;
     }
     .bloco-informativo img {
         width: 100%;
         height: 50vw;
     }
     .bloco-informativo h3{
-        font-size: 5vw;
+        font-size: 4vw;
         padding: 0 4vw;
     }
     .bloco-informativo p{
         font-size: 3.5vw;
-        padding: 3vw 5vw;
+        padding: 0 5vw;
+        padding-bottom: 3vw;
     }
     button {
         padding: 3vw 5vw;
@@ -337,14 +340,19 @@ footer p{
         height: 20vw;
     }
     .perfil-informativo h3{
+        width: 30vw;
         font-size: 4vw;
+        font-weight: 300;
+        margin: 0 auto;
+        margin-bottom: 5vw;
     }
     .apresentacao p{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .clienteh1{
-        margin: 5vw;
-        font-size: 5vw;
+        margin: 0 auto;
+        margin-bottom: 5vw;
+        font-size: 4vw;
     }
     .clientes {
         margin: 2vw 0;
@@ -357,11 +365,11 @@ footer p{
         transition: transform 0.5s ease-in-out;
     }
     .cliente {
-        flex: 0 0 25vw;
+        flex: 0 0 18vw;
         margin-right: 20px;
     }
     .cliente img {
-        height: 25vw;
+        height: 18vw;
         border-radius: 50%;
     }
     .video-container{
@@ -371,7 +379,7 @@ footer p{
         height: 90vw;
     }
     .video-container div h2{
-        margin-top:35vw;
+        margin-top:40vw;
     }
     footer{
         border:none;
@@ -379,7 +387,7 @@ footer p{
     footer p{
         margin: 0;
         padding: 0;
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .copyright {
         color: #fff;
@@ -387,6 +395,9 @@ footer p{
         background-color: #011126;
         margin: 0;
         padding: 1vw;
+    }
+    .br{
+        display: none;
     }
 
 }
