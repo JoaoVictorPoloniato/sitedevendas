@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .main-menu ul ul {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,14 +31,14 @@
                 <a href="inicio/index.html" target="iframe"><img class="logo" src="imagens/logo.png" alt="logoPortotech"></a>
                 <nav>
                     <ul>
-                        <li><span>Seguimentos</span>
+                        <li onclick="toggleSubMenu(0)"><span>Seguimentos</span>
                             <ul>
                                 <li><a href="seguimentos/drogarias/index.html" target="iframe">Drogarias</a></li>
                                 <li><a href="seguimentos/shopping/index.html" target="iframe">Shopping</a></li>
                                 <li><a href="seguimentos/varejo/index.html" target="iframe">Varejo</a></li>
                             </ul>
                         </li>
-                        <li><span>Softwares</span>
+                        <li onclick="toggleSubMenu(1)"><span>Softwares</span>
                             <ul>
                                 <li><a href="softwares/linx-farma-big/index.html" target="iframe">Linx Farma Big</a></li>
                                 <li><a href="softwares/linx-farma-softpharma/index.html" target="iframe">Linx Farma Softpharma</a></li>
@@ -42,7 +47,7 @@
                                 <li><a href="softwares/linx-varejo-emporio/index.html" target="iframe">Linx Varejo Emporio</a></li>
                             </ul>
                         </li>
-                        <li><span>Produtos</span>
+                        <li onclick="toggleSubMenu(2)"><span>Produtos</span>
                             <ul>
                                 <li><a href="produtos/dtef/index.html" target="iframe">Dtef</a></li>
                                 <li><a href="produtos/qrlinx/index.html" target="iframe">Qrlinx</a></li>
@@ -62,5 +67,18 @@
             </main>
         </section>
        <iframe name="iframe" src="inicio/index.html"></iframe>
+
+       <script>
+            function toggleSubMenu(index) {
+                var subMenus = document.querySelectorAll('.main-menu ul ul');
+                subMenus.forEach(function (subMenu, i) {
+                    if (i !== index) {
+                        subMenu.style.display = 'none';
+                    }
+                });
+
+                subMenus[index].style.display = subMenus[index].style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
 </body>
 </html>
