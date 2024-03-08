@@ -77,6 +77,11 @@ main{
     text-align: center;
     padding: 0 1vw;
 }
+.menu nav ul li a{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #000;
+}
 .menu nav ul li span{
     height: 100%;
     display: flex;
@@ -85,6 +90,11 @@ main{
     flex-wrap: wrap;
 }
 .menu nav ul li:hover span{
+    color:#034873;
+    text-shadow: 0 0 0.1vw #011126;
+    cursor:pointer;
+}
+.menu nav ul li:hover a{
     color:#034873;
     text-shadow: 0 0 0.1vw #011126;
     cursor:pointer;
