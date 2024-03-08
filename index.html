@@ -67,20 +67,6 @@
         </section>
        <iframe name="iframe" src="inicio/index.html"></iframe>
 
-       <script>
-            function toggleSubMenu(index) {
-                var subMenus = document.querySelectorAll('.main-menu ul ul');
-                subMenus.forEach(function (subMenu, i) {
-                    if (i !== index) {
-                        subMenu.style.display = 'none';
-                    }
-                });
-
-                subMenus[index].style.display = subMenus[index].style.display === 'none' ? 'block' : 'none';
-            }
-        </script>
-        <script src="/JS/index.js"></script>
-        <script src="/JS/whats.js"></script>
-        <script src="/JS/clientes.js"></script>
+        <script src="./JS/toggle.js"></script>
 </body>
 </html>
