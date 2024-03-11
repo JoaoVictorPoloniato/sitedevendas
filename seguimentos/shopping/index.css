@@ -1,0 +1,106 @@
+::-webkit-scrollbar {
+    width: 0px;  
+  }
+  html {
+    scrollbar-width: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  .moda-imagem {
+      width: 100%;
+      height: 30vw;
+      background-image: url('../../imagens/imagemlinxcloud (2).jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #0000008f;
+    }
+
+    .proximo-conteudo {
+      animation: moveButton 2s infinite alternate;
+      height: 3vw;
+      display: flex;
+      justify-content: center;
+      margin: 1.5vw 0;
+    }
+    .proximo-conteudo button{
+      height: 100%;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+    }
+    .proximo-conteudo button span{
+      font-size: 2.8vw;
+      color: #034873;
+    }
+    @keyframes moveButton {
+      0% {
+        transform: translateY(-1vw);
+      }
+      100% {
+        transform: translateY(1vw);
+      }
+    }
+   
+  footer{
+    border:none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #011126;
+  }
+  footer p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1vw;
+  }
+  .copyright {
+    color: #fff;
+    text-align: center;
+    background-color: #011126;
+    margin: 0;
+    padding: 1vw;
+  }
+
+  informacoes {
+    text-align: center;
+  }
+  
+  .sub-texto h2{
+    color: #4a3872;
+    font-family: sans-serif;
+  }
+
+  .blocodeinf {
+    background-color: #f2f2f2;
+  }
+  
+  .sub-texto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2vw;
+  
+    @media only screen and (max-width: 600px) {
+      padding: 5vw;
+    }
+  
+    h2 {
+      font-size: 2.5vw;
+      margin-bottom: 1vw;
+    }
+  
+    p {
+      font-size: 1.5vw;
+      line-height: 1.5;
+    }
+  }
+  
+  
