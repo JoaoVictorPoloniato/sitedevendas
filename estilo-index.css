@@ -67,7 +67,7 @@ main{
 .menu nav ul{
     display: flex;
     flex-direction: row;
-    margin:0;
+    margin: -1vw;
     padding: 0;
     list-style: none;
 }
