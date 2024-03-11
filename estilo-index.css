@@ -34,13 +34,13 @@ main{
     display: inline-block;
     color: #888888;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 0.6vw;
     text-decoration: none;
-    margin:1vw;
+    margin:0.6vw;
     margin-right: 3vw;
 }
 .contatos span{
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: #888888;
     font-weight: 400;
     margin: auto 0;
@@ -58,11 +58,11 @@ main{
     margin: auto 1vh;
 }
 .menu .logo {
-    height: 4vw;
+    height: 3.2vw;
 }
 .menu nav {
     display: flex;
-    height: 5vw;
+    height: 4vw;
 }
 .menu nav ul{
     display: flex;
