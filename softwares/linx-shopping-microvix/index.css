@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .linxbig {
+    position: relative;
+    text-align: center;
+    height: 35vw;
+    background-image: url('../../imagens/linx-microvix-a-solução-para-lojas, (1).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000008f;
+    overflow: hidden;
+  }
+  
+  .button-orcamento {
+    padding: 0.5% 1%; 
+    border: none;
+    border-radius: 5vw;
+    cursor: pointer;
+    background-color: #7724c5;
+    color: #f2f2f2;
+    font-size: 1vw;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-left: -32%;
+    margin-top: 27%;
+  }
+  
+  .button-orcamento:hover {
+    transform: scale(1.1);
+    background-color: #4a3872;
+  }
+  
+  
+  .footer {
+    border: none;
+    padding: 1vw;
+  }
+  
+  .footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+  }
+  
+  .copyright {
+    color: #fff;
+    text-align: center;
+    background-color: #011126;
+    margin: 0;
+    padding: 1vw;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .button-orcamento {
+      font-size: 1vw;
+    }
+  
+    .footer p {
+      font-size: 1vw;
+    }
+  
+    .copyright {
+      padding: 1vw;
+    }
+  }
+  
+  .informacoes {
+    text-align: center;
+  }
+  
+  .sub-texto h2{
+    color: #4a3872;
+    font-family: sans-serif;
+  }
+  
+  .sub-texto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2vw;
+  
+    @media only screen and (max-width: 600px) {
+      padding: 5vw;
+    }
+  
+    h2 {
+      font-size: 2.5vw;
+      margin-bottom: 1vw;
+    }
+  
+    p {
+      font-size: 1.5vw;
+      line-height: 1.5;
+    }
+  }
+  
+  .bloco-cor {
+    background-color: #f2f2f2;
+    padding: 0vw;
+  }
+  
+  .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .novos-recursos {
+    width: 50%;
+  }
+  
+  .novos-recursos ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 15%;
+  }
+  
+  .novos-recursos li {
+    font-size: 1.2vw;
+  }
+  
+  .imagem-recursos img {
+    height: auto;
+    max-height: 19vw;
+  }
+  
+  .container-botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .botao-saber-mais {
+    padding: 0.5vw 2vw;
+    border-radius: 5vw;
+    text-decoration: none;
+    background-color: #7724c5;
+    color: #fff;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2%;
+    margin-bottom: 2vw;
+  }
+  
+  .botao-saber-mais:hover {
+    background-color: #4a3872;
+  }
+  
+  .linha-separadora {
+    width: 70%; 
+    height: 1px;
+    background-color: #000000; 
+    margin: 2vw 0; 
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .botao-saber-mais {
+      padding: 0.5vw 2vw;
+      font-size: 1.5vw;
+    }
+  }
+  
+  .secao-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+  
+  .imagem-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 9%;
+  }
+  
+  .imagem-texto img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .conteudo-texto h3 {
+    color: #4a3872;
+    font-size: 1.5vw;
+  }
+  
+  .conteudo-texto p {
+    font-size: 1vw;
+  }
+  
+  .linha-separadora-img {
+    width: 100%;
+    height: 0.01vw;
+    background-color: #7724c5;
+    margin: 2vw 0;
+  }
+  
+  .estatisticas {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 2vw;
+  }
+  
+  .estatistica-item {
+    text-align: center;
+  }
+  
+  .estatistica-item h4 {
+    color: #4a3872;
+    font-size: 1.5vw;
+  }
+  
+  .estatistica-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4vw;
+    margin-top: 0.6vw;
+    color: #7724c5;
+  }
+  
