@@ -168,36 +168,58 @@
     cursor: pointer;
 }
 
-.bloco-imagem {
+.outras-secoes {
+  display: flex; 
+  gap: 2vw;
+  justify-content: center; 
+}
+
+.bloco-informativo {
+  width: calc(30% - 9vw); 
+  margin-bottom: 2vw;
+  padding: 1.5vw;
   box-sizing: border-box;
   text-align: center;
-  overflow: hidden; /* Adicione overflow: hidden para evitar que as imagens ultrapassem os limites */
-  width: calc(100% / 3); /* Defina a largura como 1/3 da largura total */
-  float: left; /* Alinhe os blocos lado a lado */
-  padding: 2vw;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 2.2vw;
 }
 
-.imagens-section {
-  width: calc(100% * 2); /* Ajuste a largura da seção para 200% para acomodar todas as imagens */
-  overflow: hidden; /* Adicione overflow: hidden para ocultar a parte excedente das imagens */
-  display: flex; /* Adicione flex para garantir que a largura seja respeitada */
+
+.imagem-container img {
+  max-width: 100%;
+  height: 8vw;
+  border-radius: 2vw;
+  padding: -3vw;
+
 }
 
-#seta-esquerda,
-#seta-direita {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2vw;
-  background: none;
-  border: none;
+
+.bloco-informativo h3 {
+  margin-top: 1vw;
+  font-size: 1vw;
+  color: #333;
+}
+
+
+.bloco-informativo p {
+  margin-top: 1vw;
+  font-size: 1vw;
+  color: #666;
+}
+
+
+.bloco-informativo button {
+  margin-top: 3vw;
+  padding: 1vw 2vw;
+  background-color: #007bff;
+  color: #fff;
+  border: #333;
+  border-radius: 1vw;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-#seta-esquerda {
-  left: 100%;
-}
-
-#seta-direita {
-  right: 100%;
+.bloco-informativo button:hover {
+  background-color: #0056b3;
 }
