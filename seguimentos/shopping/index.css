@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-    width: 0px;  
-  }
+  width: 0px;  
+}
   html {
     scrollbar-width: none;
   }
@@ -108,7 +108,7 @@
     padding: 0vw;
   }
   
-  .conteudo {
+  .conteudo-mcx {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,13 +158,12 @@
     margin-top: 1vw;
 }
 
-.botao-orcamento {
-    margin-top: 1vw;
+.button-orcamento {
+
     background-color: #034873;
     color: #fff;
     padding: 0.5vw 1vw;
-    border: none;
-    border-radius: 5px;
+    border-radius: 0.9vw;
     cursor: pointer;
 }
 
@@ -183,6 +182,7 @@
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 2.2vw;
+  box-shadow: #000000;
 }
 
 
@@ -198,19 +198,19 @@
 .bloco-informativo h3 {
   margin-top: 1vw;
   font-size: 1vw;
-  color: #333;
+  color: #7724c5;
 }
 
 
 .bloco-informativo p {
   margin-top: 1vw;
   font-size: 1vw;
-  color: #666;
+  color: #070707;
 }
 
 
 .bloco-informativo button {
-  margin-top: 3vw;
+
   padding: 1vw 2vw;
   background-color: #007bff;
   color: #fff;
@@ -222,4 +222,26 @@
 
 .bloco-informativo button:hover {
   background-color: #0056b3;
+}
+
+.btn-esquerda {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 0.3s, height 0.3s;
+}
+
+.btn-esquerda .icon {
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  background-color: #333; 
+
+}
+
+.btn-esquerda:hover {
+  width: 4vw;
+  height: 4vw; 
 }

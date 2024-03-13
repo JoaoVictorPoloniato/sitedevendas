@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setaDireita.addEventListener('click', function () {
         if (indiceAtual < secoes.length - numSecoesVisiveis) {
-            indiceAtual++;
+            indiceAtual += 3; // Incrementa o índice em 3
             atualizarVisibilidadeSecoes();
         }
     });
 
     setaEsquerda.addEventListener('click', function () {
-        if (indiceAtual > 0) {
-            indiceAtual--;
+        if (indiceAtual >= 3) { 
+            indiceAtual -= 3; 
             atualizarVisibilidadeSecoes();
         }
     });
@@ -29,7 +29,5 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
-    // Inicializar visibilidade
     atualizarVisibilidadeSecoes();
 });
