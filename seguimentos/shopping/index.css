@@ -23,32 +23,6 @@
       justify-content: center;
       background-color: #0000008f;
     }
-
-    .proximo-conteudo {
-      animation: moveButton 2s infinite alternate;
-      height: 3vw;
-      display: flex;
-      justify-content: center;
-      margin: 1.5vw 0;
-    }
-    .proximo-conteudo button{
-      height: 100%;
-      background-color: transparent;
-      cursor: pointer;
-      border: none;
-    }
-    .proximo-conteudo button span{
-      font-size: 2.8vw;
-      color: #034873;
-    }
-    @keyframes moveButton {
-      0% {
-        transform: translateY(-1vw);
-      }
-      100% {
-        transform: translateY(1vw);
-      }
-    }
    
   footer{
     border:none;
@@ -198,7 +172,7 @@
 .bloco-informativo h3 {
   margin-top: 1vw;
   font-size: 1vw;
-  color: #7724c5;
+  color: #402857;
 }
 
 
@@ -225,23 +199,80 @@
 }
 
 .btn-esquerda {
-  position: relative;
+  position: absolute;
+  margin-top: -15%;
+  left: 15%;
+  color: #7724c5;
   border: none;
   background-color: transparent;
   cursor: pointer;
   overflow: hidden;
-  transition: width 0.3s, height 0.3s;
-}
-
-.btn-esquerda .icon {
-  display: block;
-  width: 2vw;
-  height: 2vw;
-  background-color: #333; 
-
+  transition: transform 0.3s;
 }
 
 .btn-esquerda:hover {
-  width: 4vw;
-  height: 4vw; 
+  transform: scale(2.8); 
 }
+
+.btn-esquerda:not(:hover) {
+  transform: scale(2); 
+}
+
+.btn-esquerda:hover span {
+  color: #421869;
+}
+
+.btn-direito {
+  position: absolute;
+  margin-top: -15%;
+  left: 83.8%;
+  color: #7724c5;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.btn-direito:hover {
+  transform: scale(2.8); 
+}
+
+.btn-direito:not(:hover) {
+  transform: scale(2); 
+}
+
+.btn-direito:hover span {
+  color: #421869;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sub-texto {
+    padding: 5vw;
+  }
+  
+  .novos-recursos {
+    width: 100%;
+  }
+  
+  .novos-recursos h3 {
+    font-size: 3vw;
+  }
+  
+  .novos-recursos p {
+    font-size: 2vw;
+  }
+  
+  .imagem-recursos img {
+    max-height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .bloco-informativo {
+    width: 100%;
+  }
+}
+
+
