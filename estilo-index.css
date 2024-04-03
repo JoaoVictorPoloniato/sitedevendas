@@ -23,7 +23,7 @@ main{
 .contatos {
     width: 100%;
     text-align: left;
-    border-bottom:0.1vh solid #ccc;
+    background-color: #011126;
 }
 .main-contatos{
     display: flex;
@@ -32,16 +32,16 @@ main{
 }
 .contatos a {
     display: inline-block;
-    color: #888888;
+    color: #f2f2f2;
     font-weight: 400;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
     text-decoration: none;
     margin:0.6vw;
     margin-right: 3vw;
 }
 .contatos span{
     font-size: 1vw;
-    color: #888888;
+    color: #f2f2f2;
     font-weight: 400;
     margin: auto 0;
 }
@@ -53,83 +53,85 @@ main{
     display: flex;
     flex-direction: row;
 }
-.menu  a{
+.menu a{
     display: block;
-    margin: auto 1vh;
+    margin-top: 0.6vw ;
+    margin-left: 0;
+    margin-right: 2vw;
 }
 .menu .logo {
-    height: 3.2vw;
+    height: 3vw;
 }
 .menu nav {
     display: flex;
     height: 4vw;
 }
-.menu nav ul{
+.menu-inicial{
     display: flex;
     flex-direction: row;
-    margin: -1vw;
     padding: 0;
+    height: 100%;
+    margin: 0;
     list-style: none;
 }
-.menu nav ul li {
-    max-width:15vw;
+.menu-inicial li {
     display: flex;
     text-align: center;
     padding: 0 1vw;
+    
 }
-.menu nav ul li a{
+.menu-inicial li a{
     font-size: 1.1vw;
     text-decoration: none;
     color: #000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.menu nav ul li span{
+.menu-inicial li span{
     height: 100%;
     display: flex;
     font-size: 1.1vw;
     align-content: center;
     flex-wrap: wrap;
 }
-.menu nav ul li:hover span{
+.menu-inicial li:hover span{
     color:#034873;
     text-shadow: 0 0 0.1vw #011126;
     cursor:pointer;
 }
-.menu nav ul li:hover a{
-    color:#034873;
-    text-shadow: 0 0 0.1vw #011126;
-    cursor:pointer;
-}
-.menu nav ul li ul{
+.menu-segundario {
     display: none;
     position: absolute;
-    margin-top:5vw;
+    margin-top: 4vw;
     border-top: 0.2vw solid #034873;
     z-index: 50;
     background: #fff;
+    padding: 0;
 }
-.menu nav ul li:hover ul{
-    display: block;
-}
-.menu nav ul li ul li{
-    min-width: 20vw;
-    padding: 0.5vw 0.5vw;
+.menu-segundario li {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.menu nav ul li ul li a{
+.menu-segundario li a {
     text-decoration: none;
-    color:#333;
+    color: #333;
     display: block;
     font-size: 1vw;
     width: 100%;
     text-align: left;
+    padding: 1vw 0.5vw;
+    padding-right: 5vw;
+    margin: 0;
 }
-.menu nav ul li ul li:hover a{
-    color:#034873;
+.menu-segundario li:hover a {
+    color: #034873;
     text-shadow: 0 0 0.1vw #011126;
 }
 iframe{
     border:none;
-    height: calc(100vh - 8.3vw);
+    height: calc(100vh - 6vw);
 }
 @media screen and (max-width: 500px) {
     body{

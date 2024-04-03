@@ -15,6 +15,7 @@
             display: none;
         }
     </style>
+    
 </head>
 <body>
     <header>
@@ -28,17 +29,17 @@
         </section>
         <section class="menu">
             <main class="main-menu">
-                <a href="inicio/index.html" target="iframe"><img class="logo" src="imagens/logo.png" alt="logoPortotech"></a>
+                <a href="inicio/index.html" target="iframe" onclick="toggleSubMenu(3)"><img class="logo" src="imagens/logo.png" alt="logoPortotech"></a>
                 <nav>
-                    <ul>
-                        <li onclick="toggleSubMenu(0)"><span>Seguimentos</span>
-                            <ul>
+                    <ul class="menu-inicial">
+                        <li onclick="toggleSubMenu(0)" ><span>Seguimentos</span>
+                            <ul class="menu-segundario">
                                 <li><a href="seguimentos/drogarias/index.html" target="iframe">Drogarias</a></li>
                                 <li><a href="seguimentos/shopping/index.html" target="iframe">Shopping</a></li>
                             </ul>
                         </li>
-                        <li onclick="toggleSubMenu(1)"><span>Softwares</span>
-                            <ul>
+                        <li onclick="toggleSubMenu(1)" ><span>Softwares</span>
+                            <ul class="menu-segundario">
                                 <li><a href="softwares/linx-farma-big/index.html" target="iframe">Linx Farma Big</a></li>
                                 <li><a href="softwares/linx-farma-softpharma/index.html" target="iframe">Linx Farma Softpharma</a></li>
                                 <li><a href="softwares/linx-farma-cloud/index.html" target="iframe">Linx Farma Cloud</a></li>
@@ -51,7 +52,6 @@
             </main>
         </section>
        <iframe name="iframe" src="inicio/index.html"></iframe>
-
-        <script src="./JS/toggle.js"></script>
+       <script src="./JS/toggle.js"></script>
 </body>
 </html>
