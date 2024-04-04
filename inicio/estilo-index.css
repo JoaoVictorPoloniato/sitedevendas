@@ -56,8 +56,9 @@ main{
     width: 10px; /* Largura dos indicadores */
     height: 10px; /* Altura dos indicadores */
     margin: 0 5px; /* Margem entre os indicadores */
+    border: 0.1vw solid #ccc;
     border-radius: 50%; /* Bordas arredondadas para criar um círculo */
-    background-color: #777777; /* Cor de fundo padrão dos indicadores */
+    background-color: transparent; /* Cor de fundo padrão dos indicadores */
     cursor: pointer; /* Cursor ao passar sobre os indicadores */
 
 }
