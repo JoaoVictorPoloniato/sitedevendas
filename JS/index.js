@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const imagensSection = document.getElementById('imagens-section');
-    const imagens = document.querySelectorAll('.imagens-section .background-image');
+
+    const imagensSection = document.querySelector('.imagens-section');
+    const imagens = imagensSection.querySelectorAll('.background-image');
     const setaEsquerda = document.querySelector('.seta-esquerda');
     const setaDireita = document.querySelector('.seta-direita');
 
     let imagemAtualIndex = 0;
-    let temporizadorTrocaAutomatica; // Declaramos a variável para armazenar o temporizador
+    let temporizadorTrocaAutomatica;
 
     function iniciarTemporizador() {
         temporizadorTrocaAutomatica = setInterval(() => {
             mostrarProximaImagem();
-        }, 10000);
+        }, 5000);
     }
 
     function pararTemporizador() {
@@ -22,18 +23,18 @@ document.addEventListener('DOMContentLoaded', function () {
         iniciarTemporizador();
     }
 
-    iniciarTemporizador(); // Iniciar o temporizador quando o script for carregado
+    iniciarTemporizador(); 
 
     imagensSection.addEventListener('mouseenter', () => {
         setaEsquerda.style.opacity = '1';
         setaDireita.style.opacity = '1';
-        pararTemporizador(); // Quando o mouse entra na área das imagens, paramos o temporizador
+        pararTemporizador(); 
     });
 
     imagensSection.addEventListener('mouseleave', () => {
         setaEsquerda.style.opacity = '0';
         setaDireita.style.opacity = '0';
-        iniciarTemporizador(); // Quando o mouse sai da área das imagens, iniciamos o temporizador novamente
+        iniciarTemporizador(); 
     });
 
     setaEsquerda.addEventListener('mouseenter', () => {
@@ -47,31 +48,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     setaEsquerda.addEventListener('click', () => {
-        pararTemporizador(); // Quando a seta esquerda é clicada, paramos o temporizador
+        pararTemporizador(); 
         mostrarImagemAnterior();
-        reiniciarTemporizador(); // Reiniciamos o temporizador após a troca de imagem
+        reiniciarTemporizador(); 
     });
 
     setaDireita.addEventListener('click', () => {
-        pararTemporizador(); // Quando a seta direita é clicada, paramos o temporizador
+        pararTemporizador();
         mostrarProximaImagem();
-        reiniciarTemporizador(); // Reiniciamos o temporizador após a troca de imagem
+        reiniciarTemporizador();
     });
 
-    const indicadoresLista = document.getElementById('indicadores-lista'); // Adicionando a seleção do elemento para adicionar os indicadores
+    const indicadoresLista = document.getElementById('indicadores-lista');
 
+    const primeiroIndicador = document.createElement('li');
+    primeiroIndicador.classList.add('indicador', 'ativo');
+    indicadoresLista.appendChild(primeiroIndicador);
+    
+    primeiroIndicador.addEventListener('click', () => {
+        pararTemporizador();
+        mostrarImagem(0); 
+        reiniciarTemporizador();
+    });
+    
     imagens.forEach((_, index) => {
-        const indicador = document.createElement('li');
-        indicador.classList.add('indicador');
-        indicadoresLista.appendChild(indicador);
-
-        indicador.addEventListener('click', () => {
-            pararTemporizador(); // Quando um indicador é clicado, paramos o temporizador
-            mostrarImagem(index); // Quando clicado em um indicador, mostra a imagem correspondente
-            reiniciarTemporizador(); // Reiniciamos o temporizador após a troca de imagem
-        });
+        if (index !== 0) {
+            const indicador = document.createElement('li');
+            indicador.classList.add('indicador');
+            indicadoresLista.appendChild(indicador);
+    
+            indicador.addEventListener('click', () => {
+                pararTemporizador();
+                mostrarImagem(index); 
+                reiniciarTemporizador();
+            });
+        }
     });
-
+    
+    
     function mostrarImagem(index) {
         ocultarImagemAtual();
         imagemAtualIndex = index;
@@ -91,22 +105,52 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function mostrarImagemAtual() {
-        imagens[imagemAtualIndex].style.display = 'block'; // Mostra a imagem atual
+        imagens[imagemAtualIndex].style.display = 'block';
         atualizarIndicadores();
     }
 
     function ocultarImagemAtual() {
-        imagens[imagemAtualIndex].style.display = 'none'; // Oculta a imagem atual
+        imagens[imagemAtualIndex].style.display = 'none';
     }
 
     function atualizarIndicadores() {
         const indicadores = document.querySelectorAll('.indicadores .indicador');
         indicadores.forEach((indicador, index) => {
             if (index === imagemAtualIndex) {
-                indicador.classList.add('ativo'); // Adiciona a classe 'ativo' para indicar que está selecionado
+                indicador.classList.add('ativo'); 
             } else {
-                indicador.classList.remove('ativo'); // Remove a classe 'ativo' dos outros indicadores
+                indicador.classList.remove('ativo'); 
             }
         });
     }
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const itensMenu = document.querySelectorAll('.item-menu');
+    const conteudos = document.querySelectorAll('.conteudo');
+
+    itensMenu.forEach(function(item) {
+        item.addEventListener('click', function() {
+            // Oculta todos os conteúdos
+            conteudos.forEach(function(conteudo) {
+                conteudo.style.display = 'none';
+            });
+
+            // Obtém o ID do conteúdo correspondente ao item clicado
+            const conteudoID = this.getAttribute('data-target');
+
+            // Mostra o conteúdo correspondente ao item clicado
+            document.getElementById(conteudoID).style.display = 'block';
+        });
+    });
+});
+
+
+$(document).ready(function(){
+    $('.item-menu').click(function(){
+        $('.conteudo').hide();
+        var target = $(this).data('target');
+        $('#' + target).slideDown();
+    });
 });
