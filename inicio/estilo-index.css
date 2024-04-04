@@ -1,6 +1,12 @@
 ::-webkit-scrollbar {
     width: 0px;  
 }
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
 html {
     scrollbar-width: none;
 }
@@ -67,10 +73,10 @@ main{
     background-color: #fff; /* Cor de fundo para o indicador ativo */
 }
 .imagem-oculta{
-    display: none;
+    display: none !important;
 }
 .imagens-section {
-    display: block;
+    display: block !important; 
 }
 .imagem-atual{
     display: block;
@@ -302,6 +308,12 @@ footer p{
 
 
 @media screen and (max-width: 500px) {
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
     main{
         width: 95%;
     }

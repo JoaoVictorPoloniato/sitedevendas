@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     const imagensSection = document.getElementById('imagens-section');
     const imagens = document.querySelectorAll('.imagens-section .background-image');
     const setaEsquerda = document.querySelector('.seta-esquerda');
@@ -123,3 +124,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
