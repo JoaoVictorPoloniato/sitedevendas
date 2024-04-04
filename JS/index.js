@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const imagensSection = document.getElementById('imagens-section');
-    const imagens = document.querySelectorAll('.imagens-section .background-image');
+
+    const imagensSection = document.querySelector('.imagens-section');
+    const imagens = imagensSection.querySelectorAll('.background-image');
     const setaEsquerda = document.querySelector('.seta-esquerda');
     const setaDireita = document.querySelector('.seta-direita');
 
     let imagemAtualIndex = 0;
     let temporizadorTrocaAutomatica;
-
 
     function iniciarTemporizador() {
         temporizadorTrocaAutomatica = setInterval(() => {
@@ -123,4 +123,34 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const itensMenu = document.querySelectorAll('.item-menu');
+    const conteudos = document.querySelectorAll('.conteudo');
+
+    itensMenu.forEach(function(item) {
+        item.addEventListener('click', function() {
+            // Oculta todos os conteúdos
+            conteudos.forEach(function(conteudo) {
+                conteudo.style.display = 'none';
+            });
+
+            // Obtém o ID do conteúdo correspondente ao item clicado
+            const conteudoID = this.getAttribute('data-target');
+
+            // Mostra o conteúdo correspondente ao item clicado
+            document.getElementById(conteudoID).style.display = 'block';
+        });
+    });
+});
+
+
+$(document).ready(function(){
+    $('.item-menu').click(function(){
+        $('.conteudo').hide();
+        var target = $(this).data('target');
+        $('#' + target).slideDown();
+    });
 });

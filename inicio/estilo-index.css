@@ -187,6 +187,8 @@ button:hover {
 }
 footer{
     border:none;
+
+    background-color: #011126;
 }
 footer p{
     margin: 0;
@@ -196,9 +198,109 @@ footer p{
 .copyright {
     color: #fff;
     text-align: center;
-    background-color: #011126;
     margin: 0;
     padding: 1vw;
+    background-color: #011126;
+}
+.container-geral {
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    display: inline-block;
+    
+
+}
+.img-porto img{
+    width: 20vw;
+    height: 10vw;
+    margin: auto 0;   
+    display: flex;
+}
+.img-porto {
+    float: center;
+    display: flex;
+    margin: 2vw calc(50% - 10vw);
+}
+.historia{
+    margin-top: -1%;
+    width: 100%;
+
+}
+.historia h2{
+    color: #f2f2f2;
+    text-align: left;
+    padding: 1vw;
+    margin: 0;
+    margin-left: 13%;
+}
+.historia p{
+    color: white;
+    text-align: left;
+    margin-left: 15%;
+}
+.valores-missao {
+    width: 33%;
+    float: left;
+    height: 100%;
+    
+}
+
+.lista-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.item-menu {
+    display: block;
+    padding: 0.5vw 1vw;
+    background-color: #034873;
+    color: white;
+    cursor: pointer;
+    border-radius: 2vw;
+    margin-bottom: 0.3vw;
+    width: 80%;
+    margin: 2% 8%;
+    text-align: center;
+
+}
+
+.item-menu:hover {
+    background-color: #00273f;
+}
+
+.conteudo {
+    display: none;
+    padding: 10px;
+    
+    margin-bottom: 20px;
+}
+
+.conteudo h2 {
+    color: #f2f2f2;
+}
+
+.conteudo p {
+    color: white;
+}
+.contacts {
+    width: 33%;
+    height: 100%;
+    float: left;
+    display: inline-block;
+}
+
+.contacts h2 {
+    color: white;
+}
+
+.contacts p {
+    text-align: left;
+    color: white;
+}
+.container-geral, .copyright {
+    clear: both;
 }
 .apresentacao p{
     font-size: 1.1vw;
