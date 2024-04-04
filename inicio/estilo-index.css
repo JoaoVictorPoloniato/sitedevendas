@@ -524,5 +524,14 @@ footer p{
     .br{
         display: none;
     }
-
+    .linxptudo{
+        background-image: url('../imagens/cliente-lojista-capa-mobile.png');
+    }
+    .drogariacapa{
+        background-image: url('../imagens/farmacia-capa-mobile.png');
+    }
+    .gestao-capa{
+        background-image: url('../imagens/gestao-capa-mobile.png');
+    
+    }
 }
