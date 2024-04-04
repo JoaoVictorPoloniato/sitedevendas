@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function iniciarTemporizador() {
         temporizadorTrocaAutomatica = setInterval(() => {
             mostrarProximaImagem();
-        }, 10000);
+        }, 5000);
     }
 
     function pararTemporizador() {
@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
         iniciarTemporizador();
     }
 
-    iniciarTemporizador(); // Iniciar o temporizador quando o script for carregado
+    iniciarTemporizador(); 
 
     imagensSection.addEventListener('mouseenter', () => {
         setaEsquerda.style.opacity = '1';
         setaDireita.style.opacity = '1';
-        pararTemporizador(); // Quando o mouse entra na área das imagens, paramos o temporizador
+        pararTemporizador(); 
     });
 
     imagensSection.addEventListener('mouseleave', () => {
