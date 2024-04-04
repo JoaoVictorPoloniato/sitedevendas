@@ -1,3 +1,9 @@
+.mobile{
+    display:none;
+}
+.desktop{
+    display:block;
+}
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -77,8 +83,7 @@ main{
 .menu-inicial li {
     display: flex;
     text-align: center;
-    padding: 0 1vw;
-    
+    padding: 0 3vw;
 }
 .menu-inicial li a{
     font-size: 1.1vw;
@@ -133,70 +138,84 @@ iframe{
     border:none;
     height: calc(100vh - 6vw);
 }
+
 @media screen and (max-width: 500px) {
+    html{
+        width: 100vw;
+        height: 100vh;
+    };
     body{
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
     }
-    main{
-        width: 95%;
+    .mobile{
+        display:block;
+    }
+    .desktop{
+        display:none;
     }
     .contatos{
-        position: absolute;
-        border: none;
-        margin-left: 20%;
-        text-align: center;
-        width: 80%;
-        margin-top:3.5vw;
+        width: 100%;
+        background-color: #011126;
     }
-    .main-contatos{
-        flex-direction: column;
-    }
-    .contatos a {
-        font-size: 3vw;
-        font-weight: 700;
-        color: #011126;
+    .contatos a{
+        font-size: 2.5vw;
     }
     .contatos span{
-        display: none;
+        font-size: 2vw;
     }
-    .main-menu{
-        height: 28vw;
+    .menu{
+        height: 12.5vw;
+        background-color: #011126;
+        border: none;
     }
-    .menu nav{
-        position: absolute;
-        height: 10vw;
-        width: 95%;
-        top:18vw;
-    }
-    .menu a{
-        margin-top: 2vw;
+    .main-contatos{
+        display: flex;
+        width: 90%;
+        justify-content: center;
     }
     .menu .logo {
-        height: 15vw;
+        height: 8vw;
+        padding: 2vw 0;
+        margin:0;
     }
-    .menu nav ul li span{
-        font-size: 5.2vw;
+    main{
+        width: 90%;
     }
-    .menu nav ul{
+    .menu nav{
+        height: 100%;
         width: 100%;
-        justify-content: space-between; 
     }
-    .menu nav ul li {
-        max-width: none;
+    .menu-inicial li a{
+        color:#fff;
+        background-color: #011126;
     }
-    .menu nav ul li ul{
-        position: absolute;
-        left: 0.1vw;
-        width: 100%;
-        margin-top: 10vw;
-        border-top: 1vw solid #034873;
+    .menu-inicial li span{
+        color:#fff;
+        font-size: 3.5vw;
     }
-    .menu nav ul li ul li a{
-        font-size: 5vw;
+    .menu-inicial li:hover span{
+        color:#fff;
+    }
+    .menu-segundario{
+        margin-top: 12.5vw;
+        border-top: 0.8vw solid #034873;
+    }
+    .menu-segundario li a {
+        font-size: 3.5vw;
+        padding: 3vw 1.5vw;
+        padding-right: 15vw;
+    }
+    .menu-segundario li:hover a {
+        color: #fff;
     }
     iframe{
-        border:none;
-        height: calc(100vh - 28vw);
+        position: fixed;
+        top: 16.7vw;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 16.6vw);
+        border: none;
+        z-index: 1;
     }
-
 }
