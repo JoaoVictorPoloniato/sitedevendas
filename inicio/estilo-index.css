@@ -40,6 +40,31 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.indicadores {
+    text-align: center; /* Alinhar os indicadores ao centro */
+    margin-top: -3%;
+}
+
+.indicadores ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    padding: 0;
+}
+
+.indicadores ul li {
+    display: inline-block; /* Exibir os indicadores em linha */
+    width: 10px; /* Largura dos indicadores */
+    height: 10px; /* Altura dos indicadores */
+    margin: 0 5px; /* Margem entre os indicadores */
+    border-radius: 50%; /* Bordas arredondadas para criar um círculo */
+    background-color: #777777; /* Cor de fundo padrão dos indicadores */
+    cursor: pointer; /* Cursor ao passar sobre os indicadores */
+
+}
+
+.indicadores ul li.ativo {
+    background-color: #fff; /* Cor de fundo para o indicador ativo */
+}
 .imagem-oculta{
     display: none;
 }
