@@ -139,6 +139,18 @@ iframe{
     height: calc(100vh - 6vw);
 }
 
+.whatsapp-icon {
+    position: fixed; /* Posição fixa na tela */
+    bottom: 20px; /* Distância do rodapé */
+    right: 20px; /* Distância da borda direita */
+    z-index: 9999; /* Garante que o ícone esteja sempre acima de outros elementos */
+}
+
+.whatsapp-icon img {
+    width: 50px; /* Tamanho do ícone */
+    height: auto;
+}
+
 @media screen and (max-width: 500px) {
     html{
         width: 100vw;
