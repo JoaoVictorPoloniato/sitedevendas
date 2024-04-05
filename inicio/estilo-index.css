@@ -289,16 +289,36 @@ footer p{
     height: 100%;
     float: left;
     display: inline-block;
+    margin-top: 5%;
 }
 
 .contacts h2 {
     color: white;
+    position: relative;
+    top: -5%;
+    font-size: 2vw;
 }
 
 .contacts p {
     text-align: left;
+    font-size: 1.2vw;
     color: white;
 }
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    right: 10%;
+    padding: 1vw;
+    position: relative;
+}
+.social-media img{
+    height: 2vw;
+    padding: 0;
+    margin: 0 10px;
+}
+
+
 .container-geral, .copyright {
     clear: both;
 }
