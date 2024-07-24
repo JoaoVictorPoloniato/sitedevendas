@@ -1,3 +1,4 @@
+
 ::-webkit-scrollbar {
     width: 0px;  
 }
@@ -43,7 +44,7 @@ main{
 
 .indicadores {
     text-align: center; /* Alinhar os indicadores ao centro */
-    margin-top: -3%;
+    margin-top: -40px;
 }
 
 .indicadores ul {
@@ -86,11 +87,11 @@ main{
     top: 50%;
     transform: translateY(-50%);
 }
-.seta:hover span{
-    font-size: 3vw;
+.seta:hover img{
+    width: 3vw;
 }
-.seta span{
-    font-size: 2vw;
+.seta img{
+    width: 2vw;
 }
 .seta-esquerda {
     left: 1vw;
@@ -189,8 +190,8 @@ button:hover {
 }
 footer{
     border:none;
-
     background-color: #011126;
+
 }
 footer p{
     margin: 0;
@@ -200,7 +201,6 @@ footer p{
 .copyright {
     color: #fff;
     text-align: center;
-    margin: 0;
     padding: 1vw;
     background-color: #011126;
 }
@@ -210,7 +210,7 @@ footer p{
     display: inline-block;
     float: left;
     display: inline-block;
-    
+    margin: 0;
 
 }
 .img-porto img{
@@ -233,6 +233,7 @@ footer p{
     color: #f2f2f2;
     text-align: left;
     padding: 1vw;
+    font-size: 2vw;
     margin: 0;
     margin-left: 13%;
 }
@@ -245,7 +246,7 @@ footer p{
     width: 33%;
     float: left;
     height: 100%;
-    
+    font-size: 1vw;
 }
 
 .lista-menu {
@@ -288,7 +289,7 @@ footer p{
 }
 .contacts {
     width: 33%;
-    height: 100%;
+    height: 90%;
     float: left;
     display: inline-block;
     margin-top: 5%;
@@ -426,13 +427,13 @@ footer p{
 
 @media screen and (max-width: 500px) {
     .linxptudo{
-        content: url('../imagens/cliente-lojista-capa-mobile.png');
+        content: url('imagens/cliente-lojista-capa-mobile.png');
     }
     .drogariacapa{
-        content: url('../imagens/farmacia-capa-mobile.png');
+        content: url('imagens/farmacia-capa-mobile.png');
     }
     .gestao-capa{
-        content: url('../imagens/gestao-capa-mobile.png');
+        content: url('imagens/gestao-capa-mobile.png');
     }
     main{
         width: 95%;
@@ -449,7 +450,7 @@ footer p{
     .linxptudo{
         background-position-x:-200vw;
     }
-    .seta span{
+    .seta img{
         display: none;
     }
     .apresentacao h1{
@@ -555,5 +556,7 @@ footer p{
     .br{
         display: none;
     }
-
+    .indicadores {
+        margin-top: -9%;
+    }
 }
