@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function iniciarTemporizador() {
         temporizadorTrocaAutomatica = setInterval(() => {
             mostrarProximaImagem();
-        }, 5000);
+        }, 10000);
     }
 
     function pararTemporizador() {

@@ -147,7 +147,9 @@ main{
 .imagem-informativa {
     width: 100%;
 }
-
+.imagem-bloco{
+    width: 100%;
+}
 .bloco-informativo img {
     width: 100%;
     height: 15vw;
@@ -423,6 +425,15 @@ footer p{
 
 
 @media screen and (max-width: 500px) {
+    .linxptudo{
+        content: url('../imagens/cliente-lojista-capa-mobile.png');
+    }
+    .drogariacapa{
+        content: url('../imagens/farmacia-capa-mobile.png');
+    }
+    .gestao-capa{
+        content: url('../imagens/gestao-capa-mobile.png');
+    }
     main{
         width: 95%;
     }
@@ -544,14 +555,5 @@ footer p{
     .br{
         display: none;
     }
-    .linxptudo{
-        background-image: url('../imagens/cliente-lojista-capa-mobile.png');
-    }
-    .drogariacapa{
-        background-image: url('../imagens/farmacia-capa-mobile.png');
-    }
-    .gestao-capa{
-        background-image: url('../imagens/gestao-capa-mobile.png');
-    
-    }
+
 }
