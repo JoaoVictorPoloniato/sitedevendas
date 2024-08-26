@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const imagensSection = document.querySelector('.imagens-section');
+    const imagensSection = document.querySelector('.slide');
     const imagens = imagensSection.querySelectorAll('.background-image');
     const setaEsquerda = document.querySelector('.seta-esquerda');
     const setaDireita = document.querySelector('.seta-direita');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function iniciarTemporizador() {
         temporizadorTrocaAutomatica = setInterval(() => {
             mostrarProximaImagem();
-        }, 5000);
+        }, 10000);
     }
 
     function pararTemporizador() {

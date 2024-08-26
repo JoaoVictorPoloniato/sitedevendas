@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    background-color: #011126;
+}
+section.contatos{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+
+}
+section.contatos a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 3px;
+}
+section.contatos a img{
+    height: 12px;
+}
+section.contatos a span{
+    margin-left: 3px;
+}
+section.cabecalho{
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+section.cabecalho div.logo{
+    max-width: 20%;
+    min-width: 13%;
+    display: flex;
+    height: 100%;
+}
+section.cabecalho div.logo a {
+    display: block;
+    width: 100%;
+    padding-top:7.5px;
+}
+section.cabecalho div.logo a img{
+    height: 35px;
+    margin-inline: calc(50% - 13px);
+}
+section.cabecalho div.menu{
+    height: 100%;
+    width: 100%;
+}
+section.cabecalho div.menu nav{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+section.cabecalho div.menu nav .menu-inicial{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+section.cabecalho div.menu nav .menu-inicial li{
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+section.cabecalho div.menu nav .menu-inicial li a{
+    text-decoration: none;
+    color: #fff;
+}
+section.cabecalho div.menu nav .menu-inicial li ul{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left:0;
+    width: 100%;
+    border-top: 2px solid #0E2159;
+}
+section.cabecalho div.menu nav .menu-inicial li:hover > ul{
+    display: block;
+}
+section.cabecalho div.menu nav .menu-inicial li ul li{
+    text-align: left;
+}
+section.cabecalho div.menu nav .menu-inicial li ul li a{
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+    color: #0E2159;
+}
+iframe{
+    width: 100%;
+    height: calc(100% - 75px);
+}

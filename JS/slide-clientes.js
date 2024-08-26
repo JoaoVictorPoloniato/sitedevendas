@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const imagensSection = document.querySelector('.imagens-section');
-    const imagens = imagensSection.querySelectorAll('.background-image');
-    const setaEsquerda = document.querySelector('.seta-esquerda');
-    const setaDireita = document.querySelector('.seta-direita');
+    const imagensSection = document.querySelector('.slide-cliente');
+    const imagens = imagensSection.querySelectorAll('.background-image-cliente');
+    const setaEsquerda = document.querySelector('.seta-esquerda-cliente');
+    const setaDireita = document.querySelector('.seta-direita-cliente');
 
     let imagemAtualIndex = 0;
     let temporizadorTrocaAutomatica;
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function iniciarTemporizador() {
         temporizadorTrocaAutomatica = setInterval(() => {
             mostrarProximaImagem();
-        }, 5000);
+        }, 10000);
     }
 
     function pararTemporizador() {
@@ -59,32 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         reiniciarTemporizador();
     });
 
-    const indicadoresLista = document.getElementById('indicadores-lista');
-
-    const primeiroIndicador = document.createElement('li');
-    primeiroIndicador.classList.add('indicador', 'ativo');
-    indicadoresLista.appendChild(primeiroIndicador);
-    
-    primeiroIndicador.addEventListener('click', () => {
-        pararTemporizador();
-        mostrarImagem(0); 
-        reiniciarTemporizador();
-    });
-    
-    imagens.forEach((_, index) => {
-        if (index !== 0) {
-            const indicador = document.createElement('li');
-            indicador.classList.add('indicador');
-            indicadoresLista.appendChild(indicador);
-    
-            indicador.addEventListener('click', () => {
-                pararTemporizador();
-                mostrarImagem(index); 
-                reiniciarTemporizador();
-            });
-        }
-    });
-    
+   
     
     function mostrarImagem(index) {
         ocultarImagemAtual();
@@ -113,16 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
         imagens[imagemAtualIndex].style.display = 'none';
     }
 
-    function atualizarIndicadores() {
-        const indicadores = document.querySelectorAll('.indicadores .indicador');
-        indicadores.forEach((indicador, index) => {
-            if (index === imagemAtualIndex) {
-                indicador.classList.add('ativo'); 
-            } else {
-                indicador.classList.remove('ativo'); 
-            }
-        });
-    }
 });
 
 
